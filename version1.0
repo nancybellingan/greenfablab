@@ -1,0 +1,73 @@
+\documentclass[a4paper,11pt,onehalfspacing,nolistspacing,liststotoc,oneside,openany]{memoir}
+\usepackage[utf8x]{inputenc}
+\usepackage[english]{babel}
+\setlength{\parskip}{1em}
+\usepackage{url}
+\usepackage{amssymb,amsmath,amsthm,amsfonts}
+\usepackage{mathtools}
+\usepackage{mathpazo} % Use the Palatino font by default
+\usepackage{geometry}
+\usepackage[backend=bibtex,style=authoryear,natbib=true]{biblatex} % Use the bibtex backend with the authoryear citation style (which resembles APA)
+\newtheorem{theorem}{Theorem}
+\geometry{
+	paper=a4paper, % Change to letterpaper for US letter
+	inner=2.5cm, % Inner margin
+	outer=3.8cm, % Outer margin
+	bindingoffset=.5cm, % Binding offset
+	top=1.5cm, % Top margin
+	bottom=1.5cm, % Bottom margin
+	%showframe, % Uncomment to show how the type block is set on the page
+}
+\title{{\Huge Green Fablab Handbook} \\ 
+ Interdisciplinary Project 2017/2018 \\  Supervisors: Herr Prof. Dr. rer. nat. M.Sc. MBE Kai Jörg Tiedemann \&  Herr Prof. Dr.-Ing. Rolf Becker}
+
+\author{Project Members: \\ Jean Carlos Atenkeng Tendong EE(19695) \\ Nancy Bellingan EE(19575) \\ Wenjun 
+	Bao ML(16059) \\ Yi Chen ML(16042) \\ Muhammad Qasim Tahir DM(21024) \\ Taiwo  
+	Damilola IC(18610)\\ Julian Reuther PS(19739)\\ Leah Hermann PS(19699)\\ 
+	Leonard Benning PS(19627)\\ Matti Till Muellers MK(19606)\\ Esther Rosenbaum 
+	IBSS(19737)\\ Vanessa Vieweg IBSS(19605)\\ Maren Quix IBSS(19484)\\ U Aye 
+	Khine EE(18362)\\ Markel Azcue EE(23947)\\ Julen Agirre EE(23936) \\ Anith 
+	Shaji M-IE(22914)\\ Navyashree Birappa M-IE(22574)\\ Kasturi More M-IE
+	(22278)\\ Kristian Andreev IBSS(13423)\\ Annika Fricke PS(19373)\\ Arun Holla 
+	M-IE(24349)\\ Mayuri Jain M-IE(24499)\\ Anjali Singh M-IE(24372)\\ Kanika 
+	Mittal M-IE(24689)}
+
+\begin{document}
+\maketitle
+
+\newpage
+\clearpage
+\tableofcontents
+
+\newpage
+\setcounter{page}{1}
+
+\chapter{Project Handbook}
+\section{Document History}
+\section{Project Charter}
+\section{Project Aims}
+\section{Project Organization}
+\section{Work Breakdown Structure (WSP)}
+\section{WSP Specifications/Description}
+\section{Project Milestones}
+\section{Project Schedule Plan}
+\section{Project Costs & Time Tracking}
+\section{Project Risks}
+\section{Progress Report}
+\section{Final Project Report}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
