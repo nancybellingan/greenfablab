@@ -1,0 +1,1228 @@
+\documentclass[a4paper,11pt,singlespacing,nolistspacing,liststotoc,oneside,openany]{memoir}
+\usepackage[utf8x]{inputenc}
+\usepackage[english]{babel}
+\setlength{\parskip}{1em}
+\usepackage{url}
+\usepackage{longtable}
+\usepackage{graphicx}
+\usepackage{chngcntr}
+\usepackage{enumitem}
+\usepackage{url}
+\usepackage{siunitx}
+\setcounter{secnumdepth}{4}
+\usepackage{amssymb,amsmath,amsthm,amsfonts}
+\usepackage{mathtools}
+\usepackage{wrapfig}
+\usepackage{mathpazo} % Use the Palatino font by default
+\usepackage{geometry}
+\usepackage[hyphens]{url}
+%\usepackage[backend=bibtex,style=authoryear,natbib=true]{biblatex} % Use the bibtex backend with the authoryear citation style (which resembles APA)
+\newtheorem{theorem}{Theorem}
+\geometry{
+	paper=a4paper, % Change to letterpaper for US letter
+	inner=4cm, % Inner margin
+	outer=2cm, % Outer margin
+	bindingoffset=.5cm, % Binding offset
+	top=2cm, % Top margin
+	bottom=2cm, % Bottom margin
+	%showframe, % Uncomment to show how the type block is set on the page
+}
+\title{{\Huge Green Fablab Handbook} \\ 
+ Interdisciplinary Project 2017/2018 \\  Supervisors: Herr Prof. Dr. rer. nat. M.Sc. MBE Kai Jörg Tiedemann \&  Herr Prof. Dr.-Ing. Rolf Becker}
+
+\author{Project Members: \\ Jean Carlos Atenkeng Tendong EE(19695) \\ Nancy Bellingan EE(19575) \\ Wenjun 
+
+	Bao ML(16059) \\ Yi Chen ML(16042) \\ Muhammad Qasim Tahir DM(21024) \\ Taiwo  
+
+	Damilola IC(18610)\\ Julian Reuther PS(19739)\\ Leah Hermann PS(19699)\\ 
+
+	Leonard Benning PS(19627)\\ Matti Till Muellers MK(19606)\\ Esther Rosenbaum 
+
+	IBSS(19737)\\ Vanessa Vieweg IBSS(19605)\\ Maren Quix IBSS(19484)\\ U Aye 
+
+	Khine EE(18362)\\ Markel Azcue EE(23947)\\ Julen Agirre EE(23936) \\ Anith 
+
+	Shaji M-IE(22914)\\ Navyashree Birappa M-IE(22574)\\ Kasturi More M-IE
+
+	(22278)\\ Kristian Andreev IBSS(13423)\\ Annika Fricke PS(19373)\\ Arun Holla 
+
+	M-IE(24349)\\ Mayuri Jain M-IE(24499)\\ Anjali Singh M-IE(24372)\\ Kanika 
+
+	Mittal M-IE(24689)}
+
+\begin{document}
+\maketitle
+
+\newpage
+\clearpage
+\tableofcontents
+
+\newpage
+
+
+\chapter{Project Handbook}
+\section{Document History}
+\section{Project Charter}
+\section{Project Aims}
+\section{Project Organization}
+\section{Work Breakdown Structure (WSP)}
+\section{WSP Specifications/Description}
+\section{Project Milestones}
+\section{Project Schedule Plan}
+\section{Project Costs \& Time Tracking}
+\section{Project Risks}
+\section{Progress Report}
+\section{Final Project Report}
+\addcontentsline{toc}{chapter}{Appendices}
+\setcounter{chapter}{0}%
+\renewcommand{\thechapter}{\Alph{chapter}}
+\counterwithin{figure}{chapter}
+\counterwithin{table}{chapter}
+\chapter{Appendix A: Biodiesel User Manual}
+Authors: \\ Anjali Singh (24372) \\ Arun Kumar Holla (24349) \\ Carlos Atenkeng (19695) \\ Kasturi More (22278) \\ Mohammed Qasim Tahir (21024) \\ Navyashree Birappa (22574) \\
+\section*{Abstract}
+\textit{This report describes the study of various approaches for production of biodiesel. It includes the detailed research about all the chemicals used for the production of biodiesel with respect to its cost and safety guidelines. In addition to this, a detailed study of the physical materials required for the development of a biodiesel plant providing the details of vendors providing better options. The prototype design of the model is created as a 2D and 3D model with details about the actual setup of the plant with complete user manual to build the biodiesel plant on a domestic scale. The safety instructions and risks involved are mentioned separately for every component used and the entire process of biodiesel production. However, the major advantage of this process is the usage of recyclable and degradable materials for the production, thus making the entire process greener and clean. In addition to this, the advantages and drawbacks of biodiesel are explicitly mentioned to give a clear idea of the need for turning towards the usage of biofuels rather than petroleum based fuels to contribute towards the cleaner and greener environment.}
+
+\section{Introduction (Author: Kasturi More)}
+The scarcity of conventional fossil fuels, increasing emissions of pollutants, along with the increase in costs have compelled users towards non-conventional renewable energy sources as an alternative. For the vehicles and transport, biofuels are a better approach even though not the best one. As we have electric cars or hydrogen cars which is more efficient than any of the biofuels. However, implementation of these solutions will take a years together to be realized in practice. Hence, biofuels are the effective solutions than fossil fuels. Biofuels have the potential to reduce the emissions of carcinogenic compounds by about 85\%. In addition to this, biofuels are less toxic, recyclable and biodegradable as the major ingredient for production of biofuels are waste cooking oils or animal fats, etc. This makes the production of biofuels much more cost effective (SG Biofuels, 2017).
+Biodiesel is an alternative fuel which is similar to conventional fossil fuels. It is a renewable, clean burning fuel which is being used nowadays instead of diesel fuels. It is made of different mix of feedstocks which includes recycled waste vegetable oil, soya bean oil, and animal fats. Biodiesel is mostly blended with petroleum diesel in the ratios of 2\% (B2), 5\% (B5), or 20\% (B20). Biodiesel which is completely pure is referred as B100. These fuels can be used in regular diesel engines without making any changes to existing engines. Biodiesel can be stored and transported using diesel fuel tanks and equipment. The major benefit of biodiesel is that it is carbon neutral which refers that there is no production of carbon in the form of carbon dioxide. Being completely non-toxic and rapidly biodegradable, biodiesel spillages represents very less risks compared to fossil diesel spills. Biodiesel has higher flash point than fossil diesel hence it is safe in the event of crash (Esru.strath.ac.uk, 2017). The world energy demand is on the rise and the most feasible approach to meet this growing need is by using renewable and non-conventional alternative fuels. Biodiesel, in particular from biofuels exhibits a great potential in meeting the demand. The term biofuel is any liquid or gaseous fuels which can be used in transportation industry produced from biomass. Biofuels have numerous advantages like energy security, environmental concerns, socio-economic issues related to rural areas, foreign exchange savings, etc. It is a well-known fact that transport is majorly dependent on petroleum or fossil fuels which emit various harmful gases like carbon monoxide, methane, etc and they are harmful to the human beings and environment. Hence, biodiesel, a biofuel, is a better alternative as it helps in reducing the toxicity of emissions and can be used with current in-use vehicles. So, it is a cost effective solution for immediate application and would help in striking a balance between economic, agricultural and environmental development.
+\subsection{Biodiesel}
+Biodiesel is a replacement fuel for diesel to be used in diesel engines which is manufactured from plant oils i.e. soybean oil, cottonseed oil, sunflower oil, corn oil, canola oil, or recycled cooking oils, or animal fats and various other combinations of feedstocks. Used cooking oils or waste vegetable oil are plant based but may contain animal fats and are recyclable and renewable. The manufacturing process converts oils and fats into chemicals named long chain mono alkyl esters or biodiesel. These are mainly referred as fatty acid methyl esters (FAME) or fatty acid ethyl esters (FAEE) and the process is called as transesterification.
+\newline
+\begin{figure}
+	\includegraphics{figurea-1-1.png}
+	\caption{Basic Transesterification process for Biodiesel production}
+	\label{Basic Transesterification process for Biodiesel production}
+\end{figure}
+\newline 
+Biodiesel is an alkyl ester of a fatty acid which is made from vegetable oil but it is not a vegetable oil. If there is 100\% biodiesel, it is known as B100 which is a vegetable oil that has been transesterified to produce biodiesel. It is important that the biodiesel produced meets the ASTM biodiesel standards so it qualifies for warranties and can be sold as biodiesel to get tax credits. It was assumed that vegetable oil can be directly used as a fuel for engines but it can cause carbon deposits, poor lubrication, engine wear and hence deteriorates engine over time. This is due to high viscosity of vegetable oils compared to other fossil fuels or biodiesel. Additionally vegetable oils have natural gums that cause plugging in filters and fuel injectors. There are various options to resolve these issues like blend with petroleum diesel up to 20\%, preheat oil, mix oil with alcohols for emulsions,crack the vegetable oil, or transesterification of vegetable oil into biodiesel. The below table gives a major reason for transesterification of vegetable oil into biodiesel rather than using it directly as a fuel in diesel engines. Oil has very large viscosity which is a major concern in cold weather hence biodiesel is better alternative to fossil fuels.
+\newline 
+\begin{table}[h]
+\begin{center}
+	\caption{Diesel fuels providing energy content, cetane number and viscosity}
+	\label{Diesel fuels providing energy content, cetane number and viscosity}
+	\begin{tabular}{|| c | c| c | c||}  
+		\hline Fuel & Energy Content (Btu/gal) & Cetane Number & Viscosity (centistokes) \\
+		\hline
+		Biodiesel & 130,000 & 55 & 5.7 \\
+		\hline
+		Vegetable oil & 130,000 & 50 &45 \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+\subsection{Benefits of biodiesel}
+\textbf{Easy to Use}: Biodiesel can be pumped, stored and used quite similar as petroleum diesel fuel. The great advantage of biodiesel is that it can be used in currently used engines, vehicles and infrastructure without any changes. Also, biodiesel can be blended in various proportions with petroleum diesel fuel. The availability of biodiesel pumps is improving every day.
+\newline
+ \textbf{Reduction in greenhouse gas emissions}: The analysis conducted by Argonne National Laboratory found that B100 has 74\% less greenhouse gas emissions compared to petroleum diesel. In addition to this, the U.S. Department of Agriculture and the U.S. Department of Energy jointly conducted a study and determined the net carbon dioxide emissions to the atmosphere using biodiesel is 78.5\% compared to petroleum diesel fuel. Also, the California Air Resources Board (CARB) reported similar details for lifecycle analysis of biodiesel from different sources. Biodiesel is the only fuel to complete U.S. Environmental Protection Agency (EPA) conducted rigorous emissions and health effects study under the Clean Air Act successfully. This biofuel reduces effectively emissions of carbon monoxide, particulate matter, unburned hydrocarbons, and sulfates compared to petroleum diesel fuels. Mostly biodiesel is also blended with petroleum diesel, so the emissions reductions is proportional to the amount of biodiesel present in the blend. Biodiesel helps to minimize the risk of global warming by reduction in carbon emissions to the environment. \newline \textbf{Energy Balance and Security}: The ratio of energy needed to produce, refine and distribute the fuel and the amount of energy released by the fuel when it is burned is called energy balance of fuel. This helps to determine how much renewable, a fuel is. The higher the value of this ratio, lower is the environmental impact because low fossil fuel energy is required to produce, refine and distribute the fuel. A study noted that on an average biodiesel releases 3.2 units of energy per unit of fossil fuel energy to produce it whereas diesel fuel delivers only 0.83 units of energy per unit of fossil fuel energy to produce it. Security of energy is the recent topic of concern for the government and society. Many countries are dependent on import of various fossil fuel energies like coal, oil and natural gas. If the supply of this energy is disrupted, then it would result in a threat to country’s economy with no fuel for factories, transportation, run power plants and household related needs. If domestic crops are used to produce biodiesel for fuel consumption in respective countries, one gallon of biodiesel will replace one gallon of imported crude oil and hence reduce dependency on foreign fuel supplies. Moreover, biodiesel produced in dedicated refineries would increase overall domestic refining capacity, refraining from import of expensive finished product from foreign countries.
+
+\subsection{Drawbacks of biodiesel}
+\textbf{Variation in energy amount of biodiesel:} Biodiesel can be obtained from various crops. When these oils are extracted to convert them to biofuel, the obtained biodiesel can vary in producing power. Hence, all the biofuel crops fail to produce the same amount of energy. \newline\textbf{ Unsuitable at low temperatures:} Biodiesel freezes at lower temperatures but the temperature at which it will freeze depends on the oil or fat used for its production. The effective solution for this would be to blend biodiesel with winterized diesel fuel.\newline\textbf{ Increased use of fertilizers}: Excessive demand of crops to produce biodiesel would imply more production of crops and eventually excess use of fertilizers which will have major drawbacks to the environment. This would result in land pollution and soil erosion. \newline \textbf{Food scarcity}: Majorly biofuels are produced from animal or vegetable fats which may lead to increased prices of these commodities and may even create scarcity of them in some countries. Once the crops become expensive, it would affect poor people from purchasing it. \newline\textbf{ Engine clogging}: Biodiesel helps in removing dirt from engines. On the contrary, this dirt get collected in the fuel filter and hence causes engine clogging. \newline \textbf{Regional suitability}: Few oil producing crops are not suitable to be grown in many regions. Hence, they have to be transported to particular regions which results in increased costs and emissions due to transportation. \newline\textbf{ Water shortage:} The production of more crops for biodiesel production might result in more pressure on the local water resources. This may affect the water supply for other important necessities in the region and hence, producing oil crops in water shortage regions could not be recommended. \newline \textbf{Fuel distribution}: Biodiesel is newly developed biofuels used as transportation fuel and hence is not distributed across like petroleum diesel. The infrastructure needs to be developed further to make the usage of biodiesel as a commonly preferred fuel for engines. \newline  \textbf{Nitrogen oxide emissions}: Biodiesel results in 10\% more emissions of nitrogen oxide than the petroleum fuels. Nitrogen oxide results in the formation of smog and ozone and if it dissolves in atmospheric moisture, it can cause acid rains.
+\section{Background (Author: Kasturi More)}
+In 1890s, Rudolf Diesel invented a diesel engine such that it can run on variety of fuels including vegetable oil. Then in the 1930s, splitting of fatty acids from glycerin in vegetable oil to create thinner products similar to petroleum diesel. G. Chavanne was granted a Belgian patent in 1937 for ethyl ester of palm oil which is now known as biodiesel. In the following year, a passenger bus was fueled with palm oil ethyl ester on the route between Brussels and Louvain. During the World War II, the petroleum fuel supplies were interrupted hence vegetable oil was used as fuel by many countries like India, Argentina, Brazil, China and Japan. Rudolf Diesel had demonstrated his engine which used peanut oil at the Paris World Fair. At that time, he and Ford believed that the biomass fuel would be the real future of his engine. However, after the end of the war, when the petroleum fuels became cheap and in abundance, vegetable oil fuel usage halted or rather forgotten. The business and the cost involved in the petroleum industries influenced the development of engines and hence their construction was done to accommodate the new cheaper fuels eradicating the potential use of biomass fuels (Articles.extension.org, 2017).
+In the 1970s, an embargo on petroleum oil caused several countries to turn towards vegetable oil as a potential fuel. Eventually, it was rediscovered that straight vegetable oil could be used to run the diesel engines by the scientists in Austria, the United States, South Africa and many others. But the poor quality of fuel spray caused due to the thickness of vegetable oil resulted in damage to the engines. Hence, several experiments were conducted to convert vegetable oil to biodiesel. The word ‘biodiesel’ was used first in 1984.
+The first biodiesel manufacturing plant was designed to produce fuel in 1985 in an agricultural college in Austria. Later, it has been manufactured commercially across Europe since 1992 with Germany being the largest producer. Also, in the United States, biodiesel was commercially manufactured first in 1991 in Kansas City, Missouri. In 1995, Yellowstone National Park used the fuel in a truck which had been driven several hundred thousand miles without any harm to the engine and even currently in use. The biodiesel was provided by the University of Idaho. Due to this, other national parks began using biodiesel as an alternative fuel for the vehicles. Although it became popular, uneven quality was one of the problem with biodiesel. Hence, in 2001, a standard ‘ASTM Standard D6751’ for biodiesel was published by ASTM International, one of the world’s largest voluntary standards development organizations. This standard satisfied several engine manufacturers and fleet managers with the biodiesel meeting their quality requirements.
+\section{Motivation (Author: Anjali Singh)}
+Fossil fuels are the major sources of energy production today and the World consumes 11 billion tonnes of oil in fossil fuels every year. It has been predicted that with the current consumption rate, fossil fuel reserves would be completely depleted by 2080 [1]. Furthermore, they are one of the prime reasons for ever increasing emissions of harmful gases in the atmosphere. There is an immediate necessity to switch to alternate fuels.
+One of the alternatives for energy production which could substitute fossil fuels is Biodiesel. Biodiesel is produced through oil crops and bio wastes such as animal fat, non-edible oils and waste cooking oils. Typical oil crops such as rapeseed, soybean and palm contain large amounts of oil, which when treated, show similar properties as Diesel fuel. This treated fuel (or the Biodiesel) can be directly substituted in all the areas which use Diesel as the fuel. Biodiesel reduces emissions of carcinogenic compounds by 85\%, unburned hydrocarbons by 67\%, carbon monoxide by 48\% and particulate matter by 47\% compared to fossil fuels [2].
+Biodiesel also helps in waste management, as the improper disposal of waste cooking oil could pollute the air as well as water. The pollution caused by oil crops is far more severe compared to the waste cooking oil and even the diesel fuel. Rainforests have been badly affected by palm crops, one of the main oil crops used in biodiesel production, in the Southeast Asian nations [3]. Utilization of such waste cooking oil and the oil crops to produce Biodiesel would hugely benefit waste management as well as pollution control.
+The process of biodiesel production takes place through Transesterification using Methanol or Ethanol as the catalyst. Methanol is produced from natural gas, a fossil fuel, and it’s highly toxic and hazardous which makes it less suited as the catalyst. Ethanol, on the other hand, is less toxic compared to Methanol and if it’s consumed in the body, it gets converted to acetic acid (a form of vinegar). So Ethanol is used as the catalyst in the transesterification process of this research work.
+\section{Literature Research (Authors: Navyashree Birappa \& Anjali Singh)}
+Alejandro Sales from the KTH Royal Institute of Technology, Sweden has demonstrated in his Master Thesis the production of Biodiesel from sunflower oil and ethanol using sodium hydroxide as the catalyst. He also demonstrated the change in properties of biodiesel when the quantity of the additives is changed. He concluded from his experiments that the yield of biodiesel increases with ethanol/oil ratio (Sales, 2011).
+N.S. Caetano et. al., in 2012 evaluated the production of biodiesel from vegetable oil by enzymatic catalysis with ethanol as reagent and hexane as co-solvent. The evaluation results showed the best operating conditions of oil/alcohol molar ratio of 1:4, 10\% of hexane co-solvent and 48 hrs of reaction time (Caetano et al, 2012).
+Another research was carried out by Surya Unni K et. al., in 2013 wherein biodiesel was produced from waste cooking oil of FFA (Free Fatty Acids) 4-5\% using methanol and sodium hydroxide as catalyst. They performed three tests by varying the reaction time and evaluated the results. The results showed that a maximum biodiesel yield of 99.09\% was obtained for 1.5 hours of reaction time, 7:1 molar ratio and 1\% of sodium hydroxide (Unni K et al, 2013).
+Junaid Bin Aamir (2014) et. al., developed a low cost pilot plant for biodiesel production at domestic level. They produced the biodiesel from waste cooking oil, evaluated the results and compared them with the biodiesel standards. The yield capacity they observed was 80\% for 2-3 hours of reaction time. They also evaluated other properties and found them to meet the biodiesel standards (Bin Aamir et al, 2014).
+Anne Marie Helmenstine has explained the process of producing Biodiesel from new vegetable oil using sodium hydroxide (NaOH) and methanol. Experiment was carried out by mixing 3.5gm of NaOH and 200 ml of methanol for 1ltr of new vegetable oil at temperature 70°F which resulted in production of Biodiesel and Glycerin as by-products (ThoughtCo, 2017).
+Zhiyou Wen et al., at James Madison University in 2017 explained the method of making own biodiesel in mainly 3 steps. First is the transesterification between triglyceride (oil) and alcohol (methanol), titration step to determine the total acidity of waste oil and in final step esterification of waste oil is carried out using product obtained from transesterification. The proportions used to carry out the experiment where 1ltr of fresh vegetable cooking oil, 250ml of pure methanol, 3.5gm of NaOH/ 5grm of KOH at temperature ~140°F ( Zhiyou Wen et al, 2017).
+Iso et al., showed the alternative method of using lipase as a catalyst in the production of biodiesel. This method overcome the drawback of removal of catalyst and excessive energy requirements of chemical processes. This method is not yet been adopted industrially because of its high cost of enzyme catalyst. The methods involves immobilization of enzymes (0.6g of lipase) using 60ml of phosphate buffer and 3g of toyonite. Later transesterification reactions carried out by 3:1 ratio of triolein: alcohol using 0.1g of lipase at 220°C (Iso et al, 2001).
+Musa explains the effect of alcohol i.e. methanol is the best suited than ethanol, since it possess azoetrope property and easy to recover. Also conducted several experiments and concluded that the best suited Molar ratio of triglyceride to alcohol is slight more than the Stoichiometric Molar Ratio 3:1M. That is 6:1M when methanol is used and 9:1 M when ethanol is used. Higher the molar ratio, more is the complexity of separation of biodiesel and purification process (Musa, 2016).
+\section{Different methodologies for biodiesel production}
+\subsection{Base catalyzed transesterification}
+This method involves removal of glycerin from the fatty acids using a catalyst such as sodium or potassium hydroxide and replace it with an anhydrous alcohol, usually methanol or ethanol (preferably small chain alcohols). This produces methyl or ethyl ester and glycerol, a valuable by product used for making soaps, cosmetics, etc.
+It is an economical method of producing biodiesel as it gives over 98\% yield and has direct conversion to biodiesel without any intermediates. Also, it requires low temperature and pressure with no specific material requirements to build the model.
+\subsection{Acid catalyzed transesterification}
+Due to the limitations of base catalyzed transesterification with its sensitivity towards the purity of reactants and moisture and FFA content of used oil. Acid catalyzed transesterification are insensitive to FFA content and can simultaneously catalyze both esterification and transesterification process. Mainly used inorganic acidic catalysts are hydrochloric acid, sulphuric acid, phosphoric acid, and sulfonated organic acids.
+However, acid catalysts have relatively slower reaction rate and requires higher alcohol to oil ratios for better yield of biodiesel. Other disadvantages include acidic effluent, non-reusable catalyst and expensive equipment required.
+\subsection{Two step transesterification}
+The drawbacks of saponification in base catalyzed and slow reaction time in acid catalyzed transesterification have compelled researchers to adopt two step transesterification. In the first step, esterification of FFA is performed using acid to decrease the FFAs level less than 1\%. In the second step, transesterification of obtained oil is performed using alkaline catalyst. Hence, this process involved advantages of non-acidic waste water, high efficiency, low equipment cost.
+Although, it has many advantages, this process faces the problem of catalyst removal in both stages. However, the effect of acidic catalyst in the first step can be neutralized by adding extra alkaline catalyst in the second step. But, extra use of alkaline catalyst eventually increases the cost of biodiesel.
+\subsection{Transesterification using heterogeneous catalysts}
+Heterogeneous catalysts have a basic advantage of easy separation from the reactions and reusability. Hence, it makes the process green. This process does not require any catalyst recovery or aqueous treatment steps as the purification steps are very simple and yield high amount of alkyl esters approximately equal to the theoretical value. Glycerin, the byproduct obtained is highly pure (98\%) and does not contain any salt contaminants. In addition to this, there is no soap formation due to the use of heterogeneous catalysts while solid acid catalysts have strong capability to replace liquid acids removing the corrosion problems and environment threat posed to them.
+Acid zeolites, heteropolyacids, ion-exchange resins and immobilized sulfonic acids and sulfated zirconia and mixed metal oxides are some of the heterogeneous catalysts. Although there are advantages of being easily separated from products, recyclable, good stability and environmental friendly, there needs to be further research conducted expecting positive results in this direction.
+\subsection{Enzymatic transesterification}
+Currently, enzymatic catalysts are used in commercial production of biodiesel fuel. It is highly efficient, highly selective, less energy consumption, and produces less side products or waste. The enzymatic reaction is based on the use of biocatalysts as lipases which catalyze the hydrolysis of fats and vegetable oils with formation of glycerol and linear chain esters.
+This approach is said to be environmental friendly, commonly considered a green reaction. However, the cost of final enzymatic product poses problems as compared to economical chemical catalysts. Hence, there is a need for further research to be done to implement this for industrial production of biodiesel.
+\subsection{Non-catalytic transesterification}
+This approach was developed to solve the problem of reaction limitation lag caused by poor methanol and oil miscibility. Tetrahydrofuran, a co-solvent was chosen due to its boiling point close to methanol. With 6:1 methanol to oil ratio, 1.25 volume of this co-solvent per volume of methanol produced an oil dominant one phase system in which methanolysis speeds up without agitation and at ambient temperatures and pressures. There are no catalyst residues in esters or glycerol.Another non-catalytic method is using methanol at very high temperature and pressure called as supercritical methanol. At 350-400 C and >80 atm and 42:1 molar ratio, the reaction is completed within 4 minutes. This approach is catalyst free and hence the recovery of glycerol is simpler. However, the size of reactors required would be large due to higher amount of alcohol involved. Additionally, capital costs and energy consumptions are higher.
+\subsection{Emerging technologies in transesterification}
+Biodiesel production using ultrasonication uses ultrasonic radiations for emulsification of immiscible liquids in transesterification. This mixing results in smaller droplets than conventional mixing which leads to more interfacial area for reaction to occur. It is efficient and energy and time saving (reaction time reduced to 5 mins and separation phase time reduced from 8 hrs to 25 mins).
+Microwave enhanced transesterification uses microwave accelerated heating, unlike conventional heating, which couples directly with the molecules of the entire reaction mixture. This reduces the reaction time by 97\% and the separation time by 94\% and can be used without any pretreatment process. Yet, these emerging technologies needs to be researched with respect to industrial standards for industrial applications.
+
+
+
+
+\section{Materials (Author: Arun Kumar)}
+Triglycerides (Vegetable oils or animal fat) are mixed with alcohol (Bioethanol) in the ratio 1:3 in the presence alkaline catalyst (Like NaOH/KOH) to get methyl or ethyl esters (Biodiesel) in a process called transesterification.
+\subsection{Raw Materials (Chemicals)}
+Vegetable Oils: sunflower, rapeseed, soybean, coconut or palm.
+\begin{itemize}
+	\item Sunflower oil: Sunflower oil is obtained from sunflower seeds. These seeds have a high output ratio that means a small quantity of seeds is enough to produce a substantial quantity of oil. Before they can be used in the production of biodiesel, they have to be refined and the wax content have to be removed. Refining of the sunflower oil takes place by neutralizing and extracting the oil using a solvent. This process removes nutrients and makes the oil unfit for human consumption but since the oil is not used for consumption but for biodiesel, this preprocessing takes importance. Dewaxing has to be done to prevent the oil from precipitating at some temperatures and losing its volatility.
+	\item Rapeseed oil:
+	Rapeseed oil is obtained from rapeseed with a bright yellow colored flower. Rape seeds provide a large output of oil per unit input of rapeseed when compared to sunflower seeds. The cost of growing, crushing and refining rapeseed oil is large. Hence biodiesel production is carried with used rapeseed oil as input source. This method of producing biodiesel is suitable for colder countries since rapeseed oil liquefies at a lower temperature when compared to other input sources of biodiesel, thus this process is suitable for most of the countries in Northern Europe where it can get significantly cold.
+	\item Used Cooking oil and animal fats:
+	The oil used for cooking ages over a period of time and is rendered unfit for cooking purposes. If we could somehow utilize this waste oil in our biodiesel plant for synthesis it would be a great benefit for the environment as well cost saving for the producer of biodiesel. In the similar manner the biological waste produced during animal butchery and waste animal fats can also be a good
+	14
+	source of input for the biodiesel plant. An organization called PROTELUX situated in Nevraumont in the Province of Luxembourg does the job of recycling used cooking oils and animal fats and waste obtained during butchery. They supply the required raw materials in large quantities in terms of batches.
+\end{itemize}
+
+Catalysts - Sodium hydroxide or Potassium hydroxide.
+\begin{itemize}[noitemsep]
+	\item Sodium hydroxide (NaOH):
+	Sodium hydroxide is a colorless crystalline solid. It is alkaline in nature. It can decompose proteins at ambient temperatures and can cause severe burns if not handled carefully. it is available in solution format since handling and packing becomes easy. NaOH is less soluble in alcohols like methanol and ethanol
+	\item Potassium hydroxide (KOH):
+	Potassium hydroxide can be found in pure form by reacting sodium hydroxide with impure potassium. It is sold as pellets, which becomes sticky in air because KOH has high affinity towards moisture. KOH is a strong alkali and is highly corrosive potassium hydroxide is produces a much better quality of biodiesel than Sodium hydroxide, because of its highly soluble nature. But KOH is more expensive than NaOH.	
+\end{itemize}
+
+Comparison of NaOH vs KOH:
+\begin{enumerate}[noitemsep]
+	\item KOH dissolves better in alcohol than NaOH.
+	\item When NaOH is used as a catalyst the byproducts obtained like glycerol turn solid or into gel form. Extraction becomes difficult in this case and also the functioning of the production equipment itself takes a hit.
+	\item When KOH is used the glycerol hence obtained will be in liquid form, which is easily extractable.
+	\item KOH provides a better output of biodiesel when used with high titration oils then NaOH. NaOH forms large quantities of byproducts when used with high titration oils, whereas KOH does not react so vigorously with high titration oils.
+	\item Purity of KOH is obtained is less compared to NaOH. Hence more amount of KOH is needed for a particular quantity of output when compared to NaOH.
+	\item KOH is more expensive than NaOH.
+\end{enumerate}
+
+\subsection{Physical Materials}
+\begin{enumerate}[noitemsep]
+	\item Electronic scale: An electronic scale is an instrument used to evaluate the weights of different materials. One class of scales are the strain gauge scales. These scales are used to measure large weights. The provide output in digital format. The principle used here is the change in resistance due to the change in length of the string because of the weight of the object in observation. The change in length may be of a string or any object which is used to suspend the weights.
+	\item Test Tube:
+	A test tube is a device used to observe chemical reactions between the reactants. It is also used to measure the quantity of reactants to be set aside for the reactions. Test tubes need to withstand high temperatures for certain chemical reactions to take place. Hence, they are made of borosilicate glass.
+	\item Digital Magnetic Stirrer:
+	This device is used to mix solutions using a wand like object. The objects would spin very rapidly inside the solution due to the change in magnetic field. The contents inside would also spin at the same velocity thus resulting in a even mix of the contents inside. They are very efficient and durable since there exits not physical contact and no moving parts. They do not even need lubrication. In our case Bio ethanol and the catalyst NaOH/KOH are mixed at 800 rpm until the catalyst completely dissolves.
+	\item Erlenmeyer Flask:
+	It is a type of laboratory flask which has a flat base, cone shaped body and a cylinder-shaped neck. The contents of this flask can be easily mixed without the contents getting spilled due to the cone shape. Their cylinder-shaped opening of the flask makes the use of funnels easy. They are suitable for boiling liquids.
+	\item Refractometer:
+	It is a device to find the refractive indices of objects. In our case the refractive index of biodiesel has to be calculated and analyzed to determine the purity of biodiesel. It is calculated as the “Ratio of speed of light in vacuum to the speed of light in biodiesel”.
+	\item Water bath container:
+	Water bath container has preheated water maintained at a constant temperature. The reaction mixture is usually kept in a flask and placed in the container for a long time. This procedure of getting the mixture reactive is followed in case where the reactants are flammable. Since directly heating them would obviously be a bad idea. This process can be followed if the required reaction temperature is below 99.9 deg C, as water changes state after that. In our case first the mixture of bio ethanol/ catalyst is heated using water bath at 50 deg C .After the catalyst dissolves the resulting mixture is again mixed with oil and placed in water bath for 50 deg C again.
+	\item Separatory Funnel:
+	A separatory funnel is a glass equipment used to separate a mixture containing two liquids on the basis of the difference in their densities. The mixture of Biodiesel and the byproduct glycerol are introduced into a separation funnel to separate the biodiesel out of the mixture. The funnel has a cone shape with a blocker at the top and a tap at the bottom to separate out the mixture. The pressure build up in the funnel is handled by opening the stopper at the top periodically while removing the separated liquid at the bottom.
+	\item Falling sphere viscometer:
+	A viscometer evaluates the viscosity of a liquid. Falling sphere viscometer operates on the principle of frictional force exerted on a sphere due to objects with a small Reynolds number immersed in a viscous liquid. In this case a sphere is immersed in the solution and the time taken by it to travel between two set points is noted from this density of the liquid can be calculated and then using stoke’s law, the viscosity of the fluid can also be calculated.
+	\item Hot plate:
+	A Hot plate is a small equipment with one or more electric burners. They use the process of induction to transfer heat. One must be careful while using in a laboratory since the hot plate takes a lot of time to cool down and it also heats up very quickly, hence while heating liquids in a glass flask care must be taken to prevent the glass from overheating and in turn damaging the mantle. Hot plate is used in the current process to heat up oil to about 60 deg C.
+	\item Thermometer:
+	Thermometer is a device used to measure the temperature of an object. There are two main components in a thermometer. Firstly, it must have a temperature sensor to sense the target temperature and secondly it must have means to display the measured temperature to the user like a physical scale or a digital display. In the process of production of biodiesel the use of a thermometer is to monitor and display the temperature of the reaction mixture.
+\end{enumerate}
+
+\section{Ethanol from garden clippings (Bioethanol) (Author: Carlos Atenkeng)}
+
+As a cheaper and probably more sustainable way, the GF has the option of making its own ethanol from the garden clippings and grass around. The best choice of ethanol feedstocks to achieve a close to primary category will be crops with a lot of starch or sugar, such as corn or sugar beets. However, the garden clippings available are not sugar-rich, rather they are more of cellulose, so we use a different approach. This is called cellulosic ethanol. This is a brief but explicit way of getting cellulosic ethanol. This can be done either Biochemical or thermochemical. Ethanol production is monitored using an ethanol probe. An alternative method of monitoring the reaction is to measure the carbon dioxide produced (using a gas sensor) instead of the ethanol. This is a laboratory scale which can them be expanded to a larger scale.
+\newline
+\begin{figure}[h]
+	\includegraphics{figurea-7-1.png}
+	\caption {Garden clippings used for ethanol production (I2.wp.com, 2018)}
+	\label{Garden clippings used for ethanol production}
+\end{figure}
+In a nutshell, cellulosic material (such as corn stalks, leaves, grasses, etc.) will be used as a feedstock for the production of ethanol. The cellulosic material is first pretreated (ground and heated), digested with enzymes, and then fermented with yeast. Ethanol production is monitored using an ethanol probe. \newline 
+\textbf{Materials:}
+\begin{itemize}[noitemsep]
+	\item Cellulosic material (such as corn stalks, leaves, grasses, etc.)
+	\item  Cellulase enzymes
+	yeast
+	\item ethanol probe
+\end{itemize}[noitemsep] 
+\textbf{	Sources of cellulose:}
+	\begin{itemize}[noitemsep]
+	\item  Corn stalks, leaves, and husks (stover)
+	\item  Grasses grown as crops
+	\item Prairie grasses
+	\item Sawdust and woodchips
+	\item  garden waste
+	\item Other Plants
+\end{itemize} 
+
+
+\begin{figure}[h]
+	\includegraphics{figurea-7-2.png}
+	\caption {Schematic of a Biochemical Cellulosic Ethanol Production Process (Achinas, Spyridon \& Euverink, Gert-Jan, 2016)}
+	\label{Schematic of a Biochemical Cellulosic Ethanol Production Process}
+\end{figure}
+Procedure: \begin{enumerate}[noitemsep]
+		\item Sample Preparation: \begin{itemize}[noitemsep]
+		\item  A ball mill grinder (or coffee grinder if ball mill grinder is not available) is used to grind feedstock into a fine powder with no large pieces remaining.
+		\item 1.0 g of feedstock is measured and placed in a 50-mL centrifuge tube. The tube is labelled with the feedstock chosen.
+		\item  A second 50 mL centrifuge tube is labelled as “Control”. Do not put any feedstock in this tube. \end{itemize}
+\item Pretreatment:
+\begin{itemize}[noitemsep]
+	\item  A 500-mL beaker is set-up with approximately 400 mL of water on a hot plate and heated to a gentle boil.
+	\item Add 25 mL of distilled water to the 2 centrifuge tubes. Swirl to mix. Put the cap on the centrifuge tubes loosely.
+	\item  Put the centrifuge tubes in the beaker full of gently boiling water. Be sure that water from the water bath does not leak into the tubes. Let boil for 30 min.
+	\item Let tubes cool to room temperature.
+\end{itemize}
+\item Enzymatic Digestion:
+	\begin{itemize}[noitemsep]
+		\item  Add 1 mL of cellulase enzyme to both tubes.
+		\item  Put tubes in an incubator at 50 °C for 24 h.
+		\item 3 Allow the tubes to cool to room temperature.
+	\end{itemize}
+\item Fermentation:
+\begin{itemize}[noitemsep]
+	\item Add 1.0 g of active yeast (regular grocery store yeast is ok) to each of the centrifuge tubes. Swirl to mix.
+\item Put an airlock on top of the centrifuge tube. The airlock allows CO2 to escape, keeping the pressure low in the centrifuge tube.
+\item Place the centrifuge tubes in a rack and put in an incubator at 37 °C for 24 h.
+\item Using an ethanol sensor, measure the ethanol concentration in the control tube.
+\item Using an ethanol sensor, measure the ethanol concentration in the sample tube.
+\end{itemize}
+\end{enumerate}
+
+\begin{figure}[h]
+	\includegraphics{figurea-7-3.png}
+	\caption {A brief pictorial representation of cellulosic ethanol production (U.S. Department of Energy, 2007)}
+	\label{A brief pictorial representation of cellulosic ethanol production}
+\end{figure}
+
+\textbf{Results:}
+The \% ethanol in the solution will be displayed on the handheld tablet screen using the software related to the brand of the ethanol sensor used. Representative results of the percent ethanol produced by various feedstocks. \begin{table}[h]
+	\begin{center}
+	
+		\begin{tabular}{| c | c|}  
+			\hline Feedstock &Ethanol produced \\
+			\hline
+			Sawdust & 0.70\% \\
+			\hline
+		Corn Stalks & 0.60\% \\
+			\hline
+		Cardboard & 1,67\% \\
+			\hline
+		Switchgrass & 0.37\% \\
+			\hline
+		Control & 0.11\% \\
+			\hline
+		\end{tabular}
+	\end{center}
+\end{table}
+In a large scale production, there is a separation step after fermentation. That is, Stillage -- everything that's not alcohol -- settles to the bottom of a tank and is sent for processing and reuse. The alcohol stays on top and goes to distilling, which purifies it to fuel grade.
+\section{Prototype Design and Setup}
+The Detail mechanism of the biodiesel working model is shown below in the figure.
+\begin{figure}[h]
+	\includegraphics[width=1\textwidth]{figurea-8-1.png}
+	\caption {Biodiesel Prototype Design Model}
+	\label{Biodiesel Prototype Design Model}
+\end{figure}
+\subsection{Storage tank:}
+Used cooking oil comes from vendor is first store into the storage unit. The storage unit will be made up of PVC plastic or cast iron/Sheets.
+\begin{figure} 
+	\includegraphics{figurea-8-1-1.png}
+	\caption {Storage Tank}
+	\label{Storage Tank} 
+\end{figure}
+
+ Used cooking oil contains a lot of impure particles that should be removed before we transfer the oil into the processor. The storage drum used in this manufacturing unit has following properties.
+\begin{itemize}[noitemsep]
+	\item Stores up to 55-70 Gallons.
+	\item Made from Food-Grade Polyethylene.
+	\item Tendency to bear 100 degrees centigrade temperature.
+	\item Easily available
+\end{itemize}
+In the working model, we placed the storage tank on the metallic stand of 16” in height. There is an extraction valve under the storage tank. The reason behind that, heavy particles in the used oil would be settled at the bottom of the tank and make a thin layer. This layer can easily be removed by opening this valve. The metallic stand would be made up of 12 metallic bars with height of 1(1/4)’as shown in the figure.
+\begin{figure} 
+	\includegraphics{figurea8-1-2.png}
+	\caption {Metallic stand}
+	\label{Metallic stand}
+\end{figure}
+\subsection{Hand pump}	
+Manual Hand pump at the top of the Storage drum would be used to move the oil from storage tank to filtering drum. Hand pump can be replaced by electric motor pump in order to make the system more efficient. It is only used to save electricity. This hand pump can transfer about 70ml oil in one stroke that is enough for this system.
+The mechanism of the hand pump is shown in the figure
+\begin{figure}
+\includegraphics{figurea82.png}
+	\caption {Hand Pump}
+	\label{Hand Pump} 
+\end{figure}
+\subsection{Filter Drum}
+\begin{figure}[h] 
+	\includegraphics{figurea8-3.png}
+	\caption{Filter Drum} 
+	\label{Filter Drum}
+\end{figure}
+Oil in the storage tank still needs to be filtered as it contains a large amount of impurities. In order to remove the remaining impurities from this impure oil, we will filter the waste vegetable oil using nylon mesh container into that plastic barrel with a tap at the bottom. Later remove any extra water content present by allowing it to settle overnight before heating. Filtering drum can be made up of PVC/metallic sheets.
+
+\subsection{Nylon Mesh} 
+\begin{figure} 
+	\includegraphics{figurea8-4.png}
+	\caption {Nylon Mesh}
+	\label{Nylon Mesh}
+\end{figure}
+Nylon mesh is made up of nylon which is monofilament synthetic fibers can be woven very precisely to create industrial textiles with narrow pore distribution. This precision weaving process creates fine mesh woven fabrics with apertures (hole sizes) as small as 50 micron, with a strand and thickness tolerance of +/-10%.
+
+The construction of plastic cloth is determined by the yarn type, yarn size and thread count. Monofilament yarns are a single continuous filament which produces a relatively smooth surface. In plain weave constructions the straight-through pores of monofilament fabrics offer minimal flow restriction and surface loading of particles as shown in the figure.
+After filtering all the oil by the help of nylon mesh, let the oil settled for about 24hrs so that the remaining particles settles at the bottom of the filter drum and can be removed by using valve under at the bottom. We place the filtering drum on the stand so that the oil moves from filtering drum to the processor by the help of gravity. The height of this stand is same as storage drum.
+\subsection{Processor}
+
+The processor is normally made up of PVC plastic with 12-16” diameter and 28”in height. It is conical from the bottom for connection with pipe to add oil. 5r
+This reactor is an easily assembled processor, sourced from locally acquired materials, and does not require any welding.
+This processor has a capacity of processing biodiesel of about 55 gallons in one cycle. The processor stand still by the help specially designed stand for it.
+As we can see the process has conical bottom which helps the
+processor to connect it to the other parts of unit.
+\begin{figure}[h] 
+	\includegraphics{figurea-8-5.png}
+	\caption {Processor}
+	\label{Processor}
+\end{figure}
+
+\subsection{Alcohol Storage Unit}
+Alcohol is a main ingredient in processing Biodiesel.
+In the process, we used ethyl alcohol.
+\begin{figure}
+	\includegraphics{figurea-8-6.png}
+	\caption {Alcohol Storage Unit}
+	\label{Alcohol Storage Unit} 
+\end{figure}
+\subsection{Other apparatus required}
+\begin{enumerate}[noitemsep]
+	\item Storage tank (A)
+	\item  T-joint
+	\item  Metallic pipe piece 20mm length
+	\item Metallic Pipe 150mm in length
+	\item  T-joint
+	\item Pump Handle
+	\item Metallic Plate connect 2mm thickness 1’ diameter
+	\item Pipe connector
+	\item  250mm pump oil extraction pipe \\
+	a. 120mm metallic Pipe
+	\item  Elbow-joint
+		\item  Valve connector plate
+	\item  Round Valve/tap
+	\item  	Metallic Pipe 120mm length
+	\item   Nylon Mesh
+	\item Valve connector plate
+	\item Metallic Pipe 120mm length
+	\item Round Valve/tap
+		\item  Handle Valve
+	\item  Metallic joint
+	\item  Hexagonal Metallic joint
+	\item  Elbow-joint
+	\item  280mm length metallic joint
+	\item Elbow-joint
+	\item  350mm length metallic joint
+	\item  Metallic Pipe 138mm
+	\item  Metallic pipe 120mm
+	\item  Metallic pipe 80mm
+	\item  Elbow-Joint
+	\item Green handle valve
+	\item  Metallic pipe 178mm
+	\item  T-joint
+	\item  Elbow-joint
+	\item  Rubber transparent pipe of 120mm length
+	\item  Handle-valve
+	\item  Handle-valve
+	\item  Elbow-joint
+	\item  Metallic pipe 80mm length
+	\item  Metallic pipe 70mm length
+	\item  Metallic pipe 348mm length
+	\item  Handle valve
+	\item  Elbow-joint
+	\item  Metallic pipe 250mm length
+	\item  Electric pump
+	\item Rubber transparent pipe 190mm
+	\item Electric Heater
+	\item  Metallic pipe 30mm length
+	\item  Metallic pipe 30mm length
+	\item  T-joint
+	\item  Handle valves
+	\item  Elbow joint
+	\item  Metallic pipe 350mm \\
+	a. Handle valve
+	\item  Metallic Pipe 90mm length
+	\item  Elbow joint
+	\item  Metallic pipe 160mm length
+\end{enumerate}
+
+Note:
+\begin{itemize}[noitemsep]
+	\item In order to have a perfect assembly of this biodiesel plant, each part should be connected in the ascending order of decimals.
+\item Consider all the safety measures required. For more details, refer Chapter 10, 11
+\item In case of leakage, please refer to the theory/expert. 
+\end{itemize}
+Storage drum, Filtering drum, 2 stands, hand pump, electric motor, Heater, timer, angular vales 6, taps 2, Pipe 7” (1), pipes 4” (2) pipe 8” (1), pipe 5” (2) Elbow Joints (7), T-joint (3),
+\begin{figure}[h] 
+	\includegraphics[width=\textwidth]{figurea-8-7.png}
+	\caption {Complete detailed explanation of various joints and connections for biodiesel plant.}
+	\label{Complete detailed explanation of various joints and connections for biodiesel plant.}
+\end{figure}
+
+\section{Procedure (Author: Kasturi More)}
+\begin{figure}[h] 
+	\includegraphics{figurea-9.png}
+	\caption {Block diagram of process of biodiesel production}
+	\label{Block diagram of process of biodiesel production}
+\end{figure}
+\textbf{Prerequisite}
+\subsection{Identification of fat contents of waste cooking oil used:}
+The waste cooking oil is exposed to very high temperatures in the presence of air and moisture which undergoes various chemical changes due to hydrolytic oxidative and thermal reactions. The various products formed during heating are polymers, dimers, oxidized triglycerides, diglycerides and fatty acids. \newline Equipment required:
+\begin{itemize}[noitemsep]
+	\item 50mm conical flask
+	\item 10mm pipette
+	\item 1mm disposable syringes
+	\item 10ml pH bromothymol indicator solution
+	\item 500ml 0.025M sodium hydroxide solution (1g/L)
+	\item 500ml Isopropanol
+	\item Rubber pipette filler
+	\item10mm disposable syringes
+\end{itemize}
+\textbf{Instructions:}
+Take 1 ml of oil in the flask and add 10 ml of Isopropanol using the syringes and later add 3 drops of the indicator solution. Stir the solution and add the sodium hydroxide one drop at a time using the pipette until the indicator solution changes from yellow to green. Add the drops until the green colour is maintained for at least 15 seconds. The amount of hydroxide used will be the final reading minus the initial reading, in ml.
+If your amount of hydroxide used = x (ml) and the quantity of oil to process is y (liters), then the amount of solid sodium hydroxide required should be:
+\newline  z = (x + 3.5) * y grams per liter.
+
+\subsection{Selection of alkaline catalyst:}
+The selection of catalyst is based on the type of waste vegetable oil obtained. The oil must have free fatty acids (FFA < 1 wt\%) and moisture content < 0.5 wt\% so that base catalyzed transesterification can be done. Alkaline catalysts like NaOH, KOH have similar properties for producing biodiesel but have few differences which may affect the selection of one of them.
+\begin{itemize}[noitemsep]
+	\item NaOH has slightly better reactivity with oil than KOH as it is typically a pure chemical.
+	\item  KOH has better dissolving ability in alcohol compared to NaOH which takes quite some time to dissolve completely increasing the overall time of production of biodiesel.
+	\item  NaOH is required in less quantity compared to KOH due to densities, molar ratios, etc.
+	\item  Also, the cost of KOH is more than NaOH
+	\item  Glycerin obtained from NaOH is thicker and is much easier to make bar soap. Whereas glycerin from KOH is liquid even at very low temperatures and can be used to make liquid or gel soap.
+	\item  KOH causes alcohol to boil more violently at higher temperatures compared to NaOH
+	Hence, the selection of catalyst completely depends on the environmental conditions and individual choice. We have chosen NaOH as it is economical and also does not boil violently at higher temperatures.
+\end{itemize}
+Quantities of chemicals used:
+\begin{itemize}[noitemsep]
+\item Oil - 100 liters
+\item Ethanol - 20 liters (0.2L for every 1L of oil)
+\item NaOH - z grams per liter (Amount obtained from the titration process)
+\item Temperature - 50-60°C
+\item Time - 1-2 hours
+\end{itemize}
+
+\subsection{Procedural steps:}
+1. Collection of oil
+\begin{enumerate}[noitemsep]
+	\item The oil used for the biodiesel production is collected from various sources like used cooking oil from Mensa, Restaurants, etc. which is feasible for the individual. Also, using the waste cooking oil helps in reducing the efforts in disposing it properly.
+	\item  Waste vegetable oil is available at much cheaper price as compared to fresh vegetable oil and also usage of waste cooking oil helps us recycle the waste to be added to the environment.
+\end{enumerate}
+2. Oil Filtration
+\begin{enumerate}[noitemsep]
+	\item The oil is allowed to pass through a nylon mesh placed on the filtering drum. This helps in removing large particle impurities from the oil.
+	\item Later, the oil is allowed to settle so that the water content in the oil will settle at the bottom and can be removed using the valves at the bottom of the filtering drum.
+\end{enumerate}
+3. Mixing Reactants
+\begin{enumerate}[noitemsep]
+	\item The processor is heated to a certain temperature (30-40) to remove any water content.
+	\item  Next, ethanol is transferred to the processor in the molar ratio of 6:1 according to the amount of oil used in the process.
+	\item  Later, sodium hydroxide is added to the ethanol solution and it is stirred at 500 rpm using a motor pump attached besides the heater.
+	\item  The catalyst must be completely dissolved in the alcohol before adding oil to the mixture.
+\end{enumerate}
+4. Transesterification
+\begin{enumerate}[noitemsep]
+	\item Oil is added to the processor with the reactants and it is heated to a temperature of 60°C.
+	\item The mixture is stirred at 800 rpm for approximately 1 hour.
+	\item For every mole of oil, three moles of alcohol are required to form alkyl esters.
+	\item After an hour, the mixture is allowed to settle to form separate layers of glycerol and biodiesel.
+\end{enumerate}
+5. Separation of glycerol
+\begin{enumerate}[noitemsep]
+	\item A small amount of pure glycerol is added to the mixture once the biodiesel and glycerol layers are separated.
+	\item The glycerol obtained using sodium hydroxide is thicker and hence needs to be separated from the biodiesel properly. The pure glycerol helps in proper separation of the two layers.
+	\item Now the glycerol can be removed from the processor from the outlet present near the motor pump as depicted in the model.
+\end{enumerate}
+6. Biodiesel washing
+\begin{enumerate}[noitemsep]
+	\item Once the glycerol is separated, water is added to the biodiesel present in the processor.
+	\item The mixture is stirred using motor pump at about 300 rpm and then allowed to settle.
+	\item Once the water is settled, it can be removed from the valve at the bottom.
+	\item This process needs to be repeated twice to completely get rid of any alcohol or catalysts present in the biodiesel
+\end{enumerate}
+7. Biodiesel storage
+\begin{enumerate}[noitemsep]
+	\item Biodiesel can be collected from the processor and stored in a proper container for future use.
+	\item It can also be used in engines directly or by mixing with petroleum fuel as it does not cause any harm to existing engines.
+\end{enumerate}
+\section{Safety Measures (Chemicals used) (Author: Carlos Atenkeng}
+\subsection{Methanol}
+Methanol as an alcohol is a suitable reactant in the chemistry of making biodiesel. However, the Green Fablab has a lot of regulations to consider, first as a project under the Rhein-Waal university of Applied Sciences and of course, owing to the fact that regulations have to be followed when dealing with chemicals of this nature. This is a detailed explanation of what to know about Methanol and the possible hazards and regulations, not forgetting first aid measures. Given that Methanol cannot be handled accordingly, it could be a good reason to go for another alcohol like Ethanol. The idea or argument to using ethanol instead is that ethanol is less toxic.
+\subsection{Ethanol}
+Due to its less toxicity, ethanol has been adopted as a suitable alternative to Methanol in the production of Biodiesel. Ethanol is commonly available from the fermentation of corn and other feedstocks. We plan to make ethanol from available garden clippings. The procedure for a lab scale production has been included in this document.
+Note: Safety specification sheet of each chemical used are provided in the Additional Links chapter.
+
+
+\section{Risk and Safety (Overall process) (Author: Carlos Atenkeng)}
+Having a proper look of risks and safety involved in the operation of a biodiesel plant requires a stepwise breakdown of all processes (chemical, biological, mechanical etc.) from a Health, Safety and Environment (HSE) point of view. It is therefore very essential to know which materials are being used throughout the entire process. These materials will involve chemicals and hardware in the case of biodiesel. A good summary of a safety data sheets of chemicals has been provided as part of this report. At the time this document was written, the project was envisaged to be carried out in Germany. With that respect, the emergency number for the German police is 110; under 112, you can call the fire department or an ambulance.
+\newline Some of the hazards identified from documents related to incidents in biodiesel operations have being adopted in putting this document together.
+\newline \textbf{Safety Gear (Must Haves):}
+The following gear should be on hand each time you produce biodiesel even if no risks have been identified after a proper assessment:
+\begin{itemize}[noitemsep]
+	\item Chemical-resistant gloves (butyl rubber is best for ethanol and lye(catalyst))
+	\item Chemistry goggles (indirect vented) and face shield
+	\item Dust mask or cartridge respirator
+	\item Eye Wash bottle with saline solution
+	\item Small spray bottle with vinegar for neutralizing lye spills
+	\item Access to running water
+	\item Telephone in case of emergency and emergency telephone numbers 112
+	\item Fire extinguishers (ABC or CO2 )
+	\item Absorbent material and spill-containment supplies
+\end{itemize}
+
+\begin{table}
+	\begin{center}
+		\begin{tabular}{|p{7cm}|p{7cm}|}  
+			\hline
+	Hazards and Risks & Proposed situation\\
+		\hline
+	Flammability: Ethanol can auto-ignite itself at about 363°C. & Possibly heat sensors for fire detection could be used. \\
+	& Ethanol favours could be controlled during usage \\
+	& Confined vessel entry may be necessary. \\
+	\hline
+	Methanol is toxic.
+	Methanol odour threshold is above exposure limit. & Total containment should be possible \\
+	 & Where area ventilation is used, it should be suitably rated for flammable atmospheres.\\
+	 \hline
+	 Corrosive materials: like Sodium/potassium hydroxide/acids & Need for emergency showers/eyewash, also alarms, lone working considerations and correct PPE \\
+	 & Tanks and pipework should be designed to an appropriate standard. If there are any concerns, assistance should be sought from a specialist. \\
+	 & Bunding: Acid stores should be bunded with acid-resistant materials \\
+	 \hline
+	 Insulators contaminated with oil can easily heat or combust: & Regular maintenance and inspection of insulators is. \\
+	 & Prompt removal and replacement of contaminated insulation can prevent them from heating fast.\\
+	 \hline
+	 NaOH reacts with atmospheric CO2 to give carbonates, which could go on to cause blockages. & Containers with a good seal to protect from the environment \\
+	 & Good stock management prevents ageing of stock. \\
+	 & Procedures for clearing blockages. \\
+	 \hline
+	 Sulphuric acid has a high heat of mixing with water. & Acid should be added to water, not water to acid. \\
+	 \hline
+	 The ground at biodiesel plants is  & Avoid spills. \\
+	notoriously slippery, due to a coating of waxy, soapy oils. & Good housekeeping, especially floor cleaning. \\
+	 	It has been claimed that normal  & Oil-resistant footwear. \\
+  shoes and PPE/RPE are attacked by biodiesel. & Regular inspection/maintenance of PPE/RPE, including BA hoses. \\
+	 & Selection of suitable materials for PPE/RPE. \\
+	 \hline			
+		\end{tabular}
+	\end{center}
+\end{table}
+
+\begin{table}
+	\begin{center}
+		\begin{tabular}{|p{7cm}|p{7cm}|}  
+			\hline
+			Hazards and Risks & Proposed situation\\
+			\hline
+			The tyres of vehicles may not be compatible & Good housekeeping \\
+			with the biodiesel/waxy material which covers the ground at biodiesel sites. & Clean up of spillages and regular inspection/maintenance of vehicles. \\
+			\hline
+			Many containers are likely going to be used in the long-run. & Assessment of material compatibilities carried out before use. \\
+			\hline
+			Sodium/Potassium methoxide is caustic and can cause severe damage to mucous membranes and eyes. & Avoid spills and leaks. Absorb spills onto inert material. Do not let solutions dry-out - clean up immediately.\\
+			Pure material reacts violently with water. & Obtain a safety data sheet (where
+			34
+			possible) and consult a Process Safety specialist if there is any concern over the strength of solution and potential reactivity and/or CHIP classification. \\
+			\hline
+			Mixing of incompatible materials can occur by addition to the wrong tank. & Use of different fittings, adequate labelling, written operating procedures, verification of contents of supply tankers and containers.\\
+			\hline
+			Some oils may solidify in storage & Procedures for clearing blockages.\\
+			& Emergency procedures developed in accordance with the risk assessment \\
+			\hline
+			The finished biodiesel product degrades on & Good stock control. \\
+			storage, and the flash point will probably fall as it breaks down into a fatty acid and ethanol. & Avoidance of incompatible materials. \\
+			\hline
+			Alcohol/base pre-mix & \\
+			\hline
+			A flammable ethanol/air mixture is likely in the vessel airspace. & Control of ignition sources. Consideration should be given to inerting, venting to a safe place, explosion relief and the use of flame arrestors. Note: Flame arrestors may require regular inspection. \\
+			\hline
+			Ethanol vapors in reaction vessel likely to be & Total containment should be possible. \\
+			above exposure limits, also problem of venting, leaks. & Where area ventilation is used, it should be suitably rated for flammable atmospheres. \\
+			\hline
+			NaOH/KOH are usually supplied in pearl form, but dusts may arise if breakage of the pellets occurs. & Containment is the preferred control measure. \\
+			NaOH/KOH are substantially corrosive. & Use of suitable RPE/PPE. \\
+			There are manual handling and PPE concerns since most dosing operations are manual. & Eyewash and emergency showers should be available. \\
+			\hline
+			Alcohol/base mixing is known to be an exothermic step. & Add base to alcohol. \\
+			Overpressure in the vessel is also possible. & Overpressure in the vessel is also possible. \\
+			\hline
+
+	 \hline			
+\end{tabular}
+\end{center}
+\end{table}
+
+\begin{table}
+	\begin{center}
+		\begin{tabular}{|p{7cm}|p{7cm}|}  
+			\hline
+			Hazards and Risks & Proposed situation\\
+			\hline
+			Possibility of static build-up during addition of solid base. & Earthing and electrical continuity reduce the risk of static discharge.\\
+& Avoid use of non-conducting materials.\\
+\hline
+Layering of caustic under ethanol can occur with resulting sudden exotherm when mixing is started. & Start mixing before caustic added and monitor reactor agitator. \\
+Loss of agitation may lead to an accumulation of undissolved base and subsequent hotspots. 	& Efficient and reliable agitation. \\
+\hline
+During Smaller operations the user may decide to use open tanks, where flammability and toxicity limits will almost certainly be reached. & Use of entirely contained processing should be possible, although venting will be required unless system is designed for pressure. \\
+\hline
+Hydrogen generation due to presence of base. & Materials containing zinc/aluminium should be avoided. \\
+\hline
+Seal/gasket materials need to be correct for use with alcohol/base mixtures. & Adequate selection of materials of construction \\
+\hline
+The dosing of corrosive solids into the mixing vessel often involves manual handling. & Use of suitable engineering solutions \\
+\hline
+Use of solid sodium methoxide as a catalyst can lead to a flammable dust. & Generate methoxide in situ by reaction of base and methanol. Otherwise will need dust explosion prevention \& control measures \\
+\hline
+Acid Pre-Treatment & \\
+Hydrochloric acid can constitute a toxic hazard due to its vapors. & Appropriate PPE, use of RPE for spills \\
+\hline
+If nitric acid is used, this might lead to unstable compounds being produced with the organics present. Nitric acid is a strong oxidizing agent and presents a serious fire hazard in contact with combustible materials such as straw and paper. & Use of an alternative acid is preferable \\
+\hline
+HCl causes stress corrosion cracking of certain grades of stainless steels & Standard stainless steels should generally not be used with chloride ion / halides. \\
+\hline
+Use of novel acids.& If any acids are used, which are not mentioned above, then consult the local Process Safety specialist. \\
+	 \hline			
+\end{tabular}
+\end{center}
+\end{table}
+
+
+\begin{table}
+	\begin{center}
+		\begin{tabular}{|p{7cm}|p{7cm}|}  
+			\hline
+			Hazards and Risks & Proposed situation\\
+			\hline
+			Esterification Reaction & \\
+			\hline
+			Location of equipment in small scale operations & Adequate separation and ventilation is necessary. \\
+			– sheds, garages, farm buildings etc. & Storage and processing should be kept separate. \\
+			& No more than 50 liters of highly flammable liquid should be kept in the workroom.\\
+			& Combustible materials should not be kept near flammable materials \\
+			& Buildings and workrooms should be substantial, and of generally non-combustible material. \\
+			\hline
+			Generally carried out in some form of batch reactor, but larger scale producers may use ‘process intensification’ continuous processes. & Process intensification techniques are generally considered safer as they are a means of reducing the quantities of substances present. Alternatively, a semi-batch process can be used where addition of the final reactant is controlled \\
+			& However, novel reactors and processes have their own specific hazards that would need assessment on a case-by-case basis. If in doubt, contact the local Process Safety specialist \\
+			\hline
+			Loss of agitation may lead to incorrect temperature measurement (i.e. not where reaction is taking place). & Adequate agitation should be provided.
+			Note the level of temperature sensors during reactor filling, and level controls. \\
+			\hline
+			Correct material required for reaction vessel and pipework. & Avoid aluminium or metals containing zinc due to the possibility of hydrogen generation. Where there are concerns, specialist assistance should be sought \\
+			\hline
+			Too much water/too much free fatty acid leads to formation of soap and associated emulsion. & Procedures in place to deal with failed batches.\\
+			\hline
+			Soaps/solids formed may clog bursting disc. & Adequate inspection and maintenance procedures. Pressure measurement between bursting disc and relief valve where used in conjunction to indicate failure of bursting disc. \\
+			\hline
+			‘Failed’ batches may contain higher than expected amounts of free methanol and/or methylating agent.& Lower than expected flash point. Failed batches should be assessed before disposal for flammability properties. \\
+			& Bulking up poorly characterised ‘waste’ batches can initiate unplanned reactions \\
+			\hline
+			Alcohol Recovery. & \\
+			\hline
+			Purification by distillation - recovery of alcohol & Ideally this should be carried out in the open air or in well ventilated buildings, and in sealed vessels. \\
+	 \hline			
+\end{tabular}
+\end{center}
+\end{table}
+			
+\begin{table}
+	\begin{center}
+		\begin{tabular}{|p{7cm}|p{7cm}|}  
+			\hline
+			Hazards and Risks & Proposed situation\\
+			\hline
+			Biodiesel/Glycerol Phase Separation & \\
+			\hline
+			If alcohol carried over from the reaction is not fully removed, it will lead to the biodiesel product having a lower than expected flashpoint.
+			Unexpected ignition is the possible outcome. & Routine flashpoint testing of batches is necessary. \\
+			\hline
+			Use of centrifuges & Electrical equipment should be rated explosion. \\
+			& Noise assessment. \\
+			\hline
+			Laboratory Analysis & \\
+			\hline
+			In smaller workplaces the laboratory equipment may be situated in the main work area. & Ensure all laboratory equipment which is in an area subject to Hazardous Area Classification is suitable for use in that area. \\
+			\hline
+			Fire Fighting & \\
+			\hline
+			Access for Fire fighters & Even Though it is a regular requirement for construction in Germany to provide adequate entrance and evacuation for the fire fighting equipment, it is worth mentioning in this document that the GFL should make it accessible for emergence rescuers by providing packing and entrance space for firefighters. \\
+			\hline
+			General Human Health & \\
+			\hline
+			Inhalation : Once the chemicals start getting heated, inhalation of vapours has potential harm effects causing nausea and dizziness including respiration problems & The victim has to immediately move to well ventilated area but seek medical attention when they don’t feel well after that. \\
+			\hline
+			Eye contact: irritation & Use the eyewash available for the next 20 minutes. \\
+			\hline
+			Skin contact: Acids and bases are corrosive but oil itself may not cause any harm unless heated & PPE when dealing with acids and bases but in case of burns with hot oil for example, a first aid measure before	visiting the doctor is washing under cold running tap water which is available in the premises. \\
+			\hline
+			Ingestion: & First aid measure is to drink about 2 glasses of water before medical help. \\		
+			\hline			
+		\end{tabular}
+	\end{center}
+\end{table}
+
+
+
+			
+\newpage
+\section{Environmental Impacts of Biodiesel (Author: Carlos Atenkeng)}
+\textbf{Remediation of Biodiesel in the Environment:} Remediation in this context refers to removing of cleaning any environmental contaminants caused by our biodiesel production and transportation or storage processes. Even though measures have been mentioned and explained in this document to prevent biodiesel accidents and hazards, it is possible for spills and leakages to occur during transport or storage. Biodiesel is an organic fuel and spills will contaminate soil and groundwater. Since one of our aims of having a green fabrication lab is centered towards sustainability, it is important for us to also take measures to remediate any little spills that are on the ground and cannot be washed off. Biodiesel remediation can be done aerobically by aerobic degradation (oxidation).
+ \newline \textbf{Soil contamination and Remediation:} Digging and dumping the contaminated soil can remove the contamination 100\% to a desirable location before it spreads to neighbouring households especially given the location of GFL. Cost problems may arise if the contaminated soil spreads and becomes wide. Digging a large quantity of soil is expensive. \newline
+ \textbf{Groundwater Contamination and remediation:} Oils and biodiesel spills during storage, production and transportation can move further down to groundwater in Kamp-Lintfort if care is not taken. Constant sample collection and monitoring of groundwater around the GFL may help in early identification of contamination. Multi-phase and Dual-phase extraction of pure phase concentrations of all stakeholder chemicals in biodiesel production i.e. oils and biodiesel itself is a good technique. Spillage could lead to the formation of light non-aqueous phase liquids (LNAPL). Plume: the plume is the portion of the water in which the contaminant dissolved. Pumping and treating contaminated water in a treatment unit is a good strategy. For instance, the treatment unit can use activated carbon.
+ \begin{figure}[h]
+ 	\includegraphics{figurea-12.png}
+ 	\caption {Contamination of groundwater due to biodiesel (Modified from Prof. Lud’s Remediation lectures at HSRW)}
+ 	\label{Contamination of groundwater due to biodiesel (Modified from Prof. Lud’s Remediation lectures at HSRW)}
+ \end{figure}
+
+ 
+\section{Conclusion (Author: Kasturi More)}
+Biodiesel has several advantages and disadvantages which needs to be taken into consideration. The process for biodiesel production considered in this report is based on the economic and environmental aspects of the materials involved. Hence, this approach is based on the individual requirement for biodiesel production on a domestic scale.
+Several researches have been done in this area with the usage of different catalysts and different oils or animal fats. Additionally, further research is carried out in this field to come up with greener materials used in the process of biodiesel production. This would help reduce the environmental and other economic issues related to the production of biodiesel. Also, there are specific crops or enzymes found in particular geographical locations. Hence, enzymatic catalysts are considered to be a greener approach in the biodiesel production but it is not economical yet for production of biodiesel on a small scale.
+Therefore, catalyst used for the approach in this report is based on overall availability and economic aspect. Furthermore, there are various safety measured involved which needs to be taken care during the production of biodiesel.
+\section{Useful Links}
+\begin{sloppypar}
+\begin{itemize}
+	\item Methanol MSDS: http://www.sciencelab.com/msds.php?msdsId=9927227 
+	\item Ethanol MSDS: http://www.sciencelab.com/msds.php?msdsId=9923955
+	\item  NaOH MSDS: http://www.sciencelab.com/msds.php?msdsId=9924997
+	\item  KOH MSDS: http://www.sciencelab.com/msds.php?msdsId=9927230 
+	\item Glycerol MSDS: http://www.sciencelab.com/msds.php?msdsId=9927350
+	\item Sunflower oil: \url{https://www.amazon.de/Cuisine-Noblesse-Sonnenblumen%C3%B6l-PET-Flasche-Pack/dp/B01MQ40TF4/ref=sr_1_6?s=industrial&ie=UTF8&qid=1515249776&sr=8-6&keywords=sunflower+oil}
+	\item Sunflower oil: \url{https://www.amazon.de/Byodo-Brat%C3%B6l-1er-Pack-Dose/dp/B003SLF80K/ref=sr_1_9?s=industrial&ie=UTF8&qid=1515249894&sr=8-9&keywords=sunflower+oil}	
+	\item Rapeseed oil \url{https://www.amazon.de/Rapso-prozent-Reines-Raps%C3%B6l-Pack/dp/B00ER1ENCO/ref=sr_1_4?ie=UTF8&qid=1515250021&sr=8-4&keywords=raps%C3%B6l}
+	\item Source for Used cooking oil and Animal Fats \url{http://www.protelux.lu/en}
+	\item Sodium Hydroxide (NaOH): \url{https://www.amazon.de/%C3%84tznatron-Natriumhydroxid-NaOH-1kg-Dose/dp/B004T2JPQA/ref=sr_1_7?s=industrial&ie=UTF8&qid=1515247193&sr=8-7&keywords=Potassium+hydroxide}
+	\item Potassium Hydroxide (KOH) \url{https://www.amazon.de/%C3%84tzkali-Kaliumhydroxid-potassium-hydroxide-Dose/dp/B01LYJL1KH/ref=sr_1_2?s=industrial&ie=UTF8&qid=1515247193&sr=8-2&keywords=Potassium+hydroxide}
+	\item Iso Octane \url{https://www.fishersci.com/shop/products/isooctane-hplc-fisher-chemical-4/p-216089}
+	\item Acetone \url{https://www.restauro-online.com/epages/63807438.sf/en_GB/?ObjectPath=/Shops/63807438/Products/101}
+	\item Exane \url{https://tinyurl.com/y8lnrb4p}
+	\item Lipozyme TL \url{https://www.sigmaaldrich.com/catalog/product/aldrich/534641?lang=de&region=DE}
+	\item Electronic Scale \url{https://www.amazon.de/Paketwaage-Plattformwaage-Wiegefl%C3%A4che-Aluminumguss-Batteriebetrieb/dp/B00492NYDU/ref=pd_cp_229_1?_encoding=UTF8&psc=1&refRID=XJ6131SQ2VB60YZPGGTM}
+	\item Test Tube \url{https://www.amazon.de/Reagenzglas-mit-Boden-Vaseneinsatz- Stk/dp/B003JHFFL0/ref=pd_cp_201_1?_encoding=UTF8&psc=1&refRID=18NXM8WKYVC4FRY664NX}
+	\item Digital Magnetic Stirrer \url{https://www.amazon.de/Digital-Display-Magnetr%C3%BChrer-Heizung-Kontrolle/dp/B00JN21V4K}
+	\item Erlenmeyer Flask \url{https://tinyurl.com/ybvgnfxn}
+	\item Refractometer \url{https://tinyurl.com/y7wx3wdw}
+	\item Water Bath Container \url{https://www.amazon.de/Advantage-Lab-AL04-12-Heating-ultrasonic-water/dp/B01MZ3W5IS}
+	\item Separatory Funnel \url{https://tinyurl.com/y7y2pc8x}
+	\item hot plate \url{https://www.amazon.de/dp/B01E1AKJJQ/ref=sspa_dk_detail_4?psc=1}
+	\item Thermometer \url{https://tinyurl.com/ycoqwdtf}
+\end{itemize}
+\section{References}
+\begin{itemize}
+	\item Cia.gov. (2017). \textit{The World Factbook — Central Intelligence Agency}. [online] Available at: \url{https://www.cia.gov/library/publications/the-world-factbook/geos/xx.html} [Accessed 18 Dec. 2017].
+	\item BIODIESEL BENEFITS – WHY USE BIODIESEL? \url{http://www.biodiesel.com/biodiesel/benefits/}
+	\item Making biodiesel from waste oil would help waste management, climate change efforts, \url{https://tinyurl.com/yd8l5j2j}
+	\item Sales, Alejandro., \textit{Production of biodiesel from sunflower oil and ethanol by base catalyzed transesterification}, Royal Institute of Technology, Sweden, June 2011
+	\item Caetano, Nidia S., et. al., 2012, \textit{Enzymatic Catalysis of Vegetable Oil with Ethanol in the presence of Co-solvents}, Chemical Engineering Transactions, 26, 81-86
+	\item Unni K, Surya., et. al., \textit{Single Step Production of Biodiesel from Used Cooking Oil}, University Kebangsaan Malaysia, 2013
+	\item Bin Aamir, Junaid., Shehzad, Akmal., \textit{Design and Fabrication of Pilot Plant for the Production of Biodiesel from Waste Cooking Oil at Domestic Level}, Air University, Pakistan, 2014
+	\item ThoughtCo. (2017).\textit{ Make Your Own Biodiesel from Vegetable Oil.} [online] Available at: \url{https://www.thoughtco.com/make-biodiesel-from-vegetable-oil-605975} [Accessed 19 Dec. 2017].
+	\item Zhiyou Wen , Christopher Bachmann, Robert Grisso , Jactone Arogo , David Vaughan, James Madison University, Harrisonburg, VA,\textit{ Making your own Biodiesel}. [online] Available at: \url{https://biology.mit.edu/sites/default/files/Make\_Biodiesel.pdf} [Accessed 19 Dec. 2017].
+	\item Iso, M., Chen, B., Eguchi, M., Kudo, T. and Shrestha, S. (2001). \textit{Production of biodiesel fuel from triglycerides and alcohol using immobilized lipase}. Journal of Molecular Catalysis B: Enzymatic, 16(1), pp.53-58.
+	\item Musa, I. (2016). \textit{The effects of alcohol to oil molar ratios and the type of alcohol on biodiesel production using transesterification process}. Egyptian Journal of Petroleum, 25(1), pp.21-31.
+	\item SG Bio Fuels. (2017). \textit{6 Reasons Why We Need Biofuels}. [online] Available at: \url{http://www.sgbiofuels.com/6-reasons-why-we-need-biofuels/} [Accessed 9 Nov. 2017].
+	\item \url{Esru.strath.ac.uk.} (2017). \textit{What Is Biodiesel.} [online] Available at: \url{http://www.esru.strath.ac.uk/EandE/Web\_sites/02-03/biofuels/what\_biodiesel.htm} [Accessed 14 Nov. 2017]. 
+	\item (2008) Biodiesel. In: Biodiesel. Springer, London Articles.extension.org. (2017). History of Biodiesel - eXtension. [online] Available at: \url{http://articles.extension.org/pages/27135/history-of-biodiesel} [Accessed 15 Nov. 2017].
+	\item	 Refaat, A. A., (2010). \textit{Different techniques for the production of biodiesel from waste vegetable oil}. Int. J. Environ. Sci. Tech., 7 (1), 183-213 [Accessed 14 Dec. 2017].
+	\item Anon, (2018). [online] Available at: \url{https://www.icheme.org/communities/subject\_groups/safety%20and%20loss%20prevention/resources/hazards%20archive/~/media/Documents/Subject%20Groups/Safety\_Loss\_Prevention/Hazards%20Archive/XX/XX-Paper-77.pdf} [Accessed 11 Jan. 2018].
+	\item Biodieselmagazine.com. (2018). Biodiesel Magazine - The Latest News and Data About Biodiesel Production. [online] Available at: \url{http://www.biodieselmagazine.com/articles/8451/biodiesel-producers-and-process-safety-management-compliance} [Accessed 11 Jan. 2018].
+	\item Demirbas, A. \textit{Bioethanol from Cellulosic Materials: A Renewable Motor Fuel from Biomass}. Energy Source. 27 327-337 (2005).
+	\item Ragauskas, A.J., Williams, C.K., Davison, B.H., Britovsek, G., Cairney, J., Eckert, C.A., Frederick Jr, W.J., Hallett, J.P., Leak, D.J., Liotta, C.L., Mielenz, J.R., Murphy, R., Templer, R., Tschaplinski, T. \textit{The Path Forward for Biofuels and Biomaterials.} Science. 311 484 (2006).
+	\item Balat, M., Balat, H., Oz, C. \textit{Progress in bioethanol processing. }Progress in Energy and Combustion Science. 34 (2008).
+	\item The Energy Independence and Security Act of 2007. United States Congress, Washington DC. January 4, (2007).
+	\item Bullis, K. (2018). Making Ethanol from Wood Chips. [online] MIT Technology Review. Available at: \url{https://www.technologyreview.com/s/406886/making-ethanol-from-wood-chips/} [Accessed 8 Feb. 2018].
+	\item Achinas, Spyridon \& Euverink, Gert-Jan. (2016). Consolidated briefing of biochemical ethanol production from lignocellulosic biomass. Electronic Journal of Biotechnology. 23. . 10.1016/j.ejbt.2016.07.006 [Accessed 8 Feb. 2018].
+	\item US DOE. June 2007. Biofuels: Bringing Biological Solutions to Energy Challenges, US Department of Energy Office of Science [Accessed 8 Feb. 2018].
+	\item Markets \&amp; Policies Markets for Biofuels Standards Financing and investment for biofuels Policy \&amp; Legislation about Biofuels Consultations for biofuels EU and Member States Strategies and EU and Member States Strategies, 2018.
+\end{itemize}
+\end{sloppypar}
+
+\chapter{Appendix B: Biogas production plant model}
+Authors:
+\newline
+Nancy Bellingan (19575) \\ Yi Chen (16042) \\ Wenjun Bao (16059)\\ Taiwo Damilola (18610)\\
+Editors:
+\newline
+Nancy Bellingan (19575) \&  Kristian Andreev (13423)
+\section{Acknowledgement}
+This research project within our study course at the Rhine-Waal University of Applied Science about biogas and possible applications of a homemade system for the Green Fablab started end October from nothing more than scraps and the good intentions of our Supervisors, Prof. Dr. Kai Tiedemann and Prof. Dr.-Ing. Rolf Becker, in dreaming a Green Fablab energy-independent and able to recycle bio-waste produced in situ. We do hope our research will be useful for the design of the facilities that will be built in the next years and a guideline and inspiration for an aware biogas production. We worked in 6 students on this project: Nancy Bellingan (19575) Bachelor “Environment and Energy”, Yi Chen (16042) Bachelor “Mobility and Logistics”, Wenjun Bao (16059) Bachelor “Mobility and Logistics”, Taiwo Damilola (18610) Bachelor “Information and Communication Design” , Kristian Andreev (13423) Bachelor “International Business and Social Sciences” and Julen Agirre (23936) Bachelor “Environment and Energy”. For the single contribution details it is possible to find the informations in the Handbook; for what concerns this manual writing, the content has been produced by Bellingan, Chen, Bao and Damilola and the edit was done by Bellingan and Andreev. Agirre contributed with designing the prototype in SolidWorks software.
+We do hope to have gathered enough informations for an interesting reading and that our model an inspiration for the future. 
+
+\section{Aim (Nancy Bellingan 19575)}
+Biogas is becoming more and more present in Germany’s energy production net, with more than nine thousand production plants present all over the country and it’s leading Europe as main biogas produce with 33 TWh yearly gross production at 2017 and a year cut of 700 tons on CO2 emissions [Fachverband Biogas 2017]. The strength of biogas is in the usage of local bio-wastes cutting on the transportation and direct applications of the energy or fuel produced. This manual has the aim to give an overview on biogas applications and principles as well as describing a homemade biogas plant model, its materials and possible configurations and how to operate and maintain it in conformity with safety regulations to guarantee a controlled experience.
+
+\section{Introduction to biogas technology (Taiwo Damilola, 18610) }
+Biogas is defined as the mixture of gases produced by the bacterial breakdown of biomass under anaerobic conditions. The biomass consists of three categories: (1) Farm organic matter such as feed waste, energy crops, liquid manure, harvest waste; (2) Household waste such as market waste, expired food or food waste; (3) Industrial by-products such as wastes from fat separators, glycerine, and the by-products of food processing. In the airtight digesters, the organic matter is converted to biogas by bacteria in several steps (Wellinger et al 2013).
+
+As it is with fossil natural gas, the first main component of biogas that ascertains the energy content of the gas is flammable methane (CH$_{4}$). As seen in the figure below, the methane content of the biogas changes between 50\% and 75\% depending on the substrate the biogas plant will digest. The second main component of biogas is carbon dioxide (CO$_{2}$). The content of the (CO$_{2}$) in biogas fluctuates between 25\% and 50\%. Other components of biogas includes oxygen, traces of sulfur (S$_{2}$) and hydrogen sulfide (H$_{2}$S) and also water (H$_{2}$O).
+\newline In a biogas treatment, biogas can be compressed to biomethane with approximately 98\% of methane, which has the same properties as natural gas. Thus, biogas and biomethane produced from biogas are flexible renewable fuels that can be stored. In the context of sustainable energy supply, biogas and biomethane are important functions because electricity, motor fuel, and heat can be produced from them.
+\begin{figure}[h]
+	\includegraphics{figb1.png}
+	\caption {Composition of biogas [www.biogasindia.in/employment.htm]}
+	\label{Composition of biogas [www.biogasindia.in/employment.htm]}
+\end{figure}
+
+\subsection{Sources of biogas feedstock (Taiwo Damilola 18610)}
+Anaerobic digestion of manure and other feedstocks results in the production of biogas which are important functions to make energy for farms. Therefore, biogas can be generated by using different organic matter as a feedstock in anaerobic digesters. The feedstock used in the  process must contain appropriate moisture contents depending on the operation and the design of the system. However, there are several limitations (legal, engineering and scientific) to what can be added successfully to a digester (Kirk, 2014).
+\subsubsection{Feedstocks for Anaerobic Digestion}
+Feedstocks used in anaerobic digestion are obtained primarily from one major source as shown in figure B.2.
+\newline 
+In the past, anaerobic digestion was mostly associated with the treatment of animal (pig, cattle, poultry) manure and sewage sludge from aerobic wastewater treatment plants(Steffen et al 1998, pp. 2). The energy production potential of feedstocks varies depending on the type, level of processing/pretreatment and concentration of biodegradable material. \\
+However, the increased environmental consciousness, accompanied by the demand for new waste management strategies and renewable energy forms, broadened the field of applications for anaerobic digestion and hence introduced industrial and municipal wastes as well.
+\begin{figure}[h]
+	\includegraphics{figb2.png}
+	\caption {An organics operating system for the future [Renewable Energy World http://bit.ly/2C2EeY3]}
+	\label{An organics operating system for the future [Renewable Energy World http://bit.ly/2C2EeY3]}
+\end{figure}
+Recent concerns over landfilling of solid wastes stimulated engineers to consider new approaches to their treatment before disposal. For example solid and semi-solid wastes such as the organic fraction of municipal solid waste (OFMSW), currently commonly disposed of to landfills or aerobically composted, may be treated anaerobically, saving landfill space and converting the organic material partially to biogas energy  (Steffen et al 1998, pp. 2).
+
+\subsubsection{Agricultural Wastes Suitable For Anaerobic Digestion}
+Agricultural waste represents one of the largest anthropogenic sources of methane
+present in the atmosphere. Anaerobic digesters can turn these wastes into biogas as
+renewable energy, containing at least 50\% of methane, and the solid residues into
+fertilizers rich in nutrients. (Merlin and Boileau 2013, pp. 1).
+\\
+Listed below are agricultural wastes that can be commonly used and suitable in anaerobic digesters:
+\begin{itemize}
+	\item Pig slurry: Up to six varieties of the different types of animal housing are commonly in use, resulting in large variations of total solids (2 - 10 \%) and organic dry matter content in manure. The excrements from pigs, particularly in units with more than 1000 animals, are commonly collected as a liquid slurry. In most cases, pigs are kept in feedlots with open floors, where the excrements are collected through slots with high amounts of liquid. The dilution of the feedstock resulting in 2 - 5 \% TS makes the application of a digester system often uneconomic. In some cases, the slurry is collected using scraper systems resulting in higher dry matter contents of 5 - 10 \% (Steffen et al 1998, pp. 9).
+	\item Cow slurry: (Steffen et al 1998, pp. 9) stated that Cow slurry is typically collected from feedlots by a scraper system. Straw is often added in the feedlots resulting in slight variations of total solids. Commonly little water is added for cleaning and rinsing of the cattle walkway, hence dilution with water is minimal. As for pig slurry, cow slurry also exhibits large variations in total solids contents, depending on the animal housing system. Depending on the location and operational tradition cows often spend long periods of time grazing on pastures. Reduced overall manure collection must therefore be considered in economic evaluations.
+	\item Waste and wastewater from agriculture related industries: Huge amounts of agricultural raw materials are processed in the food industries. During processing, wastes and wastewater are produced. These could often be recycled as co-substrates in agricultural digesters. The resulting anaerobic sludge could then be applied as a fertilizer on agricultural land. Typical agro-industrial wastes and by-products include protein and sugar containing whey from the dairy industry or slops from fruit juice processing and alcohol distilleries. Various other crop and plant residues from industrial processing, often used or treated via other routes or landfilled, may also be treated anaerobically. Such residues can be added as co-substrates to manure or slurry digestion, provided the transport of the industrial waste can be organized on a rational basis.(Steffen et al 1998, pp. 9). 
+\end{itemize}
+\subsection{Processes involved (Taiwo Damilola 18610)}
+Biogas is defined as the mixture of gases produced by the bacterial breakdown of biomass under anaerobic conditions (Wellinger et al., 2013).The principal reaction sequences can be classified into four major stages involving the following:
+\begin{itemize}
+	\item  Hydrolysis 
+	\item Acidogenesis
+	\item Acetogenesis/dehydrogenation
+	\item Methanogenesis
+	
+\end{itemize}
+\begin{figure}[h]
+	\includegraphics[width=\textwidth]{figb3.png}
+	\caption {Basics of the Biogas Production Process:Four Stages of the Biogas Process [Stefan Junne, and Kozani, 2014 http://bit.ly/2EEThb7]	}
+	\label{Basics of the Biogas Production Process:Four Stages of the Biogas Process [Stefan Junne, and Kozani, 2014 http://bit.ly/2EEThb7]	}
+\end{figure}
+
+\subsubsection{Hydrolysis}
+
+In the first process called hydrolysis large organic polymers such as carbohydrates, proteins and fats are broken down or depolymerized by acidogenic bacteria into sugars, amino acids and long chain fatty acids by hydrolytic exo-enzymes excreted by fermentative microorganisms (P. Bajpai 2017). 
+
+The hydrolysis process is very important particularly in the break-down of manure. This is because 40-50\% of the solids in manure contains complex structure known as biofibres. (Broughton 2009). Hydrolysis is a relatively slow step and it can limit the rate of the overall anaerobic digestion process, especially when using solid waste as the substrate. The products of hydrolysis that can be converted to methane are carboxylic volatiles acids, alcohols, simple sugars,H$_{2}$,CO$_{2}$ and ketones (Broughton 2009).
+\\ The hydrolysis reaction is presented in the chemical equation in figure B.4.
+\begin{figure}[h]
+	\includegraphics{figb4.png}
+	\caption {hydrolysis in anaerobic oxidation of complex wastes [Anaerobic Technology,Pulp and Paper Industry (2017)]}
+	\label{hydrolysis in anaerobic oxidation of complex wastes [Anaerobic Technology,Pulp and Paper Industry (2017)]}
+\end{figure}
+
+\subsubsection{Acidogenesis}
+This is the breakdown of soluble organic matter produced by hydrolytic bacteria into higher organic acids such as propionic acid and butyric acid and acetic acid, carbon dioxide and hydrogen sulfide. The higher organic acids are transferred to acetic acid and hydrogen by acetogenic bacteria (Broughton 2009). According to (Guerrero et al 1999), temperature strongly affects acidification, however temperatures which results in cell death and higher energy costs such as thermophilic temperatures may result in sub-optimal temperature being preferable (Guerrero et al 1999). 
+\\
+The acidogenesis reaction also known as fermentative process is presented in figure B.5.
+\begin{figure}[h]
+	\includegraphics{figb5.png}
+	\caption {acidogenesis in anaerobic oxidation of complex wastes [Anaerobic Technology,Pulp and Paper Industry (2017)]}
+	\label{acidogenesis in anaerobic oxidation of complex wastes [Anaerobic Technology, Pulp and Paper Industry (2017)]}
+\end{figure}
+
+\subsubsection{Acetogenesis/dehydrogenation}
+This is the breakdown of molecules into acetic acid, carbon dioxide and hydrogen. The organisms that convert intermediates such as propionate, butyrate, lactate and ethanol to acetate are obligate hydrogen producing acetogenic bacteria. These species are syntrophic in that they require the presence ‎H$_{2}$  utilising bacteria to keep hydrogen concentration below a 10$ ^{-3} $ atm (Broughton 2009).
+The equation can be seen in figure B.6.
+\begin{figure}[h]
+	\includegraphics{figb6.png}
+	\caption {Acetogenesis/dehydrogenation in anaerobic oxidation of complex wastes [Anaerobic Technology,Pulp and Paper Industry (2017)]}
+	\label{Acetogenesis/dehydrogenation in anaerobic oxidation of complex wastes [Anaerobic Technology, Pulp and Paper Industry (2017)]}
+\end{figure}
+\subsubsection{Methanogenesis}
+In the final process, methane is produced by methanogenic bacteria. These bacteria are capable of metabolizing formic acid, acetic acid, methanol, carbon monoxide, carbon dioxide and hydrogen to methane (Broughton 2009). Methanogens bacteria use the products of the previous stages to produce methane, carbon dioxide and water. those bacteria are sensitive to high and low pH (optimal range 6.5-8) and they are more active at high temperature (30-40 °C). The remain material, called digestate, cannot go under further background. The chemical reaction is to be found in figure B.7.
+\begin{figure}[h]
+	\includegraphics{figb7.png}
+	\caption {Methanogenesis in anaerobic oxidation of complex wastes [Anaerobic Technology,Pulp and Paper Industry (2017)]}
+	\label{Methanogenesis in anaerobic oxidation of complex wastes [Anaerobic Technology, Pulp and Paper Industry (2017)]}
+\end{figure}
+\subsubsection{Microorganisms involved in Biogas production}
+There are several hundred species of microorganisms that are involved in the anaerobic digestion and biogas production. These bacteria can be divided into the following four trophic groups: 
+\begin{itemize}
+	\item Hydrolytic and fermentative bacteria: They act by secreting extracellular enzymes which break the bonds of polymeric substances producing shorter chain compound. They use hydrogen to transform carbon dioxide into methane. As a result they help to reduce hydrogen pressure
+	\item Syntrophic $ H_{2} $ producing bacteria
+	\item Methanogenic bacteria
+	\item  Acetogenic bacteria	
+\end{itemize}
+
+\subsection{Important parameters (Yi Chen,16042)}
+The main factors affecting biogas production we need to consider are temperature, pH value, Chemical oxygen demand (COD) and Carbon-Nitrogen ratio (C.N). 
+\subsubsection{Temperature}
+Temperature selection and control are crucial to the development of the anaerobic digestion process. Temperature has a great influence on the quality and quantity of biogas production.
+Metabolic activity of biogas fermentative microorganisms has a close relationship with temperature. In a certain range, the higher the temperature, the more vigorous metabolism of biogas microorganisms, the more biogas produced, the more efficient the biogas production will be. In general, in the temperature range of 8 $\sim$ 60 °C ( Budiyono, Syaichurrozi and Sumardiono, 2013) it's possible to have biogas fermentation.
+However, for medium temperature fermentation, the best temperature is about 35 °C, at 40 $\sim$ 45 °C (Budiyono, Syaichurrozi and Sumardiono, 2013), the gas production will decline.
+From the fermentation cycle point of view, the lower the temperature, the longer the fermentation cycle of raw materials, the higher the temperature, the shorter the fermentation cycle.
+Biogas fermentation temperature suddenly increased or decreased, the gas production will have a significant impact, if the change is too large, the gas production almost stopped. For example, normally biogases digesters producing gas at 35 °C will almost stop its production if the temperature drops suddenly to 20 °C.
+Therefore, Biogas production is related to temperature and the temperature is related to the season. According to the four seasons change, sunshine and temperature change. Especially into the German winter, the temperature can lower to below 5 °C. Low temperatures can reduce or stop biogas production.
+Although the sunshine in winter is greatly reduced, the winter soil temperature is higher than the outdoor temperature. It is possible to to wrap the mixing tank on the insulation, and then bury it underground to provide a steady temperature but such method may not be effective. Precise control of the temperature is quite difficult and it may be easier to aid the temperature with heating.
+
+\subsubsection{pH Value}
+All life processes are carried out at a pH value determined in the anaerobic digestion process. The pH value of biogas fermentation has an important influence on gas production and quality of biogas. The optimum hydrolysis stage pH is between 5 and 6. For methane production, the optimum pH is between 6.5 and 8 (Castillo et al 2006).
+In the neutral environment, it is fermented more quickly and yields more gas. The peak of gas production is very obvious, and the CH$ _{4} $ content is high.
+Under alkaline conditions (initial pH value of 7.5 $ \sim $ 8.5), gas production is not large.
+If the pH value drops below 6, methane production will be strongly inhibited.
+Acid-producing bacteria require a pH of 5.5-7.0 during the hydrolysis stage and a pH of 6.5-8.0 for methanogenic bacteria in the final stage.
+
+\subsubsection{ Carbon-Nitrogen ratio}
+In biogas production, the C / N ratio of raw materials is essential. When the anaerobic digestion process is performed in a single stage, the optimal C / N ratio is expected to be between 15 and 25.
+\begin{table}
+	\caption{the C/N ratio of different organic substrates}
+	\label{the C/N ratio of different organic substrates}
+\begin{center}
+	\begin{tabular}{ | p{5cm} | c | c | c |}
+		\hline
+Organic Substrat & Carbon Content \% & Nitrogen Content \% & C/N Ratio \\
+\hline
+Various herbs & 15 & 0.6 & 25 \\
+\hline
+Wheat straws & 46 & 0.53 & 87 \\
+\hline
+Barley Straws & 42 & 0.75 & 56 \\
+\hline
+Rice Straws & 42 & 0.63 & 67 \\
+\hline
+Corn cobs & 40 & 0.75 & 56 \\
+\hline
+Lucerne & 48 & 2.6 & 18 \\
+\hline
+Tree Leaves & 41 & 1.0 & 41 \\
+\hline
+Potato stalks & 40 & 1.2 & 22 \\
+\hline
+Stalks of soy and bean & 41 & 1.3 & 32 \\
+\hline
+Sheep dung & 16 & 0.55 & 29 \\
+\hline
+Cow manure & 7.3 & 0,29 & 25 \\
+\hline
+Horse dung & 10 & 0.42 & 24 \\
+\hline
+Pig Manure & 7.8 & 0.65 & 13 \\
+\hline
+Chicken waste & 45 & 3.0 & 15 \\
+		
+		\hline
+	\end{tabular}
+\end{center}
+\end{table}
+As table B.1 shows, the C/N ratio of various herbs, Lucerne, potato stalks, cow manure, horse dung, pig manure and chicken waste are between 15 and 25. These raw materials are more suitable for biogas fermentation.
+It is also possible to mix different raw materials and so increasing biogas production.
+
+Research shows that the use of mixed raw materials is more suitable for the production of biogas than the use of a single raw material. The increase in biogas production is particularly noticeable with sewage sludge and grasses mixed material,as shown in table B.2.
+\\ In addition to the above three main factors affecting biogas production, there are other conditions need to be considered. For example, inhibitory substances for microorganisms (detergents, antibiotics etc.) which may lower the metabolism and consequently the biogas production. Furthermore, according to different anaerobic digestion environment, adding some uric acid or calcium carbonate, can speed up the reaction rate. 
+\begin{table}
+	\caption{Methanogenic ability of various raw material mixtures}
+	\label{Methanogenic ability of various raw material mixtures}
+	\begin{center}
+		\begin{tabular}{ | p{4cm} | p{2cm} |p{2cm} | p{4cm} |}
+			\hline
+			Name Feedstock & Mixing Ratio \% & Biogas L / kg S.O. & To increase of calculation \% \\
+			\hline
+			Cow Manure & 100 & 380 & - \\
+			\hline
+			Pigs Manure & 100 & 569 & - \\
+			\hline
+			Poultry Manure & 100 & 617 & - \\
+			\hline
+			Sewage sludge & 100 & 265 & - \\
+			\hline
+			Grasses & 100 & 277 & - \\
+			\hline 
+			Cow + pigs manure & 50 - 50 & 510 & +7.5 \\
+			\hline
+			Cow + birds manure & 50 - 50 & 528 & +6 \\
+			\hline
+			Cow manure + sewage sludge & 50 - 50 & 407 & +26 \\
+			\hline
+			Cow manure + grasses & 50 - 50 & 363 & +5 \\
+			\hline
+			Pigs + birds manure & 50 - 50 & 634 & +7 \\
+			\hline
+			Cow + pigs + birds manure & 25 - 50 - 25 & 585 &+9.6 \\
+			\hline
+			Birds manure + sewage sludge & 50 - 50 & 495 & +12.3 \\
+			\hline
+			Birds manure + grasses & 50 - 50 & 513 & +13.5 \\
+			\hline
+			Sewage sludge + grasses & 50 - 50 & 387 & +42 \\
+		\hline
+\end{tabular}
+\end{center}
+\end{table}
+\subsection{Examples of biogas production plants(Wenjun Bao 16059)}
+\subsubsection{Small biogas plant}
+The range of small biogas plants is from  100 to 300 kW. In particular,  small biogas plants from 100 kW are perfect for family or medium sized businesses [IES MiTO - 100 - 300 kW Biogas plants].
+For example FOV BIOGAS TECH focus is on the  small biogas plant business, including small canteen, small urban farmer and small rural farmer as priority customers [FOV - Biogas].
+\begin{figure}[h]
+	\includegraphics{figb8.png}
+	\caption {50m$^{ 3} $  biogas reactor for sugar industry in India[FOV BIOGAS TECH]}
+	\label{50m$^{ 3} $  biogas reactor for sugar industry in India[FOV BIOGAS TECH]}
+\end{figure}
+In Figure B.9 it is possible to see some informations concerning different sized plants.
+\begin{figure}[h]
+	\includegraphics[width=\textwidth]{figb9.png}
+	\caption {Electricity  produced with FOV reactors[FOV BIOGAS TECH]}
+	\label{Electricity  produced with FOV reactors[FOV BIOGAS TECH]}
+\end{figure}
+
+\subsubsection{Large biogas plant}
+Large biogas plants with over 1,000 kW in power are certainly a choice of great perspective in the field of alternative energy and environmentally friendly waste treatment. Their popularity is not yet that high but they are starting to be diffused.
+Large biogas plants are suitable for extremely large size situations, as large estates, cooperative associations, and consortia with public participation [IES Large biogas plants of over 1,000 kW].
+\begin{figure}
+	\includegraphics[width=\textwidth]{figb10.png}
+	\caption {Host biogas plant [HoSt Bioenergy]}
+	\label{Host biogas plant [HoSt Bioenergy]}
+\end{figure}
+In these industrial biogas plants, organic waste currents are digested without the addition of manure. HOST biogas plants have supplied systems for processing slaughterhouse waste, industrial and municipal primary and secondary sludge, unpacked food products, and industrial food products [HoSt Bioenergy 2018, Industrial biogas plants].
+
+\newline
+HoSt supplies biomass fired and wood boiler from 2 MWth to 50 MWth. Boilers greater than 25 MWth are built in two combustion lines in combination with one larger efficient steam turbine. This allows cost effective road transport and reducing the height of the building envelope. This modular approach also provides greater installation flexibility for our clients.
+
+20\% to 30\% higher net electricity yield than a comparable installation based on an ORC (Organic Rankine Cycle). Achieved by a low own electricity consumption and a high boiler efficiency.
+
+Extra high electrical efficiency during the summer due to a lower temperature of the heating water, allowing the steam in the turbine to expand further and therefore generate more electricity.[HoSt Bioenergy 2018, Biomass-fired boilers \& wood boilers].
+
+\subsection{Digestate and its fate (Taiwo Damilola 18610)}
+Digestate can be defined as a nutrient-rich material remaining after anaerobic digestion of a biodegradable feedstock. It consists of left over indigestible material and dead micro-organisms which can be used as a fertilizer for crops without any further processing, substituting industrially produced mineral fertilisers [The Official Information Portal on Anaerobic Digestion, 2018]. Digestate is normally liquid, but when originating from a dry state Anaerobic digestion process, it can also be a solid, stackable materia [Drosg et al 2015]. Makádi, Tomócsik \&  Orosz (2012) stated that digestate contains a high proportion of mineral nitrogen (N) especially in the form of ammonium which is easily available for plants.
+The exact composition of digestate is determined by the plants diet and strongly depends on the nature and composition of the substrates as well as on the operational parameters of the anaerobic digestion process  [Drosg et al 2015].
+\subsubsection{pH value of digestate}
+The pH value of digestate can be influenced by the biochemistry of the anaerobic digestion process. Drosg et al. (2015) also stated that pH value can also be influenced by the characteristics of substrates and that the pH value of fresh digestate typically is alkaline and ranges  from 7.5 to 8.0 pH. The increased in the pH values of digestate during anaerobic digestion is as a result of the formation of ammonium carbonate $(NH _{4})_{2}CO_{3}$ and the removal of $ CO_{2} $ (Georgacakis et al 1992). On the other hand, Drosg et al. (2015) wrote that a decrease of pH is caused by the precipitation of carbonates such as calcite $ CaCO_{3} $ and of iron phosphates.
+\subsubsection{Nitrogen content}
+The content of ammonium in digestate is directly related to the total N content in the substrate. Pig slurry has higher N-total and $ NH_{4}-N $ contents than cattle slurry and this is directly reflected in the digestate dominated by such substrates (Drosg et al 2015). The $ NH_{4} $ content of the digestate is about 60-80\% of its total N content as reported by Makádi, Tomócsik \&  Orosz, (2012), but Furukawa and Hasegawa (2008) stated that  99\% of $ NH_{4}-N $ of the digestate is from kitchen food wastes. 
+
+\subsubsection{Phosphorus Content}
+The phosphorus content of digestate is higher in concentration than that of composts which make it more suitable for supplement of the missing macronutrients in soils [Makádi, Tomócsik \&  Orosz, 2012]. Nevertheless, co-digesting substrate with high content of phosphate substrate like pig slurries  which has high phosphate content and substrate with lower phosphate content will lower the phosphate content in the digestate produced due to simple dilution [ARBOR, 2013].
+\subsubsection{Total solids content}
+The content of the total organic dry matter and the carbon content of digestate are decreased by the decomposition of easily degradable carbon compounds in the digestors [Makádi, Tomócsik \& Orosz, 2012].Therefore digestate can contain 50\% to 80\% less TS compared to the incoming substrate [Drosg et al., 2015]. This implies that digestate application on soils has the potential of improving soil structure through input of inert organic matter and fibers which contributes to the formation of humus in the medium to long term.
+\subsubsection{ Uses of Digestate}
+Digestate is a fully fermented nutrient-rich material, which can be used as such, or can be further processed by separating it into liquid and solid fractions to be upgraded. For this reason, digestate serves as an excellent organic fertilizer that can replace inorganic fertilizers and raw manure whilst providing various benefits as follows:
+\begin{enumerate}
+	\item Digestate as an organic fertilizer when used for crops and as a soil improver, reduces the production of artificial fertilizers like greenhouse gas emissions in the food, feed, beverage and agricultural sectors [Susanna \& Franz, 2014].
+	\item Digestate can be used to replace raw manure as fertilizer which gives plants a greater benefit.  It directly contributes to plant growth without adhering to plants or the surface of the ground. 
+\end{enumerate}
+\subsection{Pros and Cons of Digestate}
+Pros:
+\begin{enumerate}
+	\item It does not present the odor nuisance specific to raw manure, therefore providing increased land application options.
+	\item It makes weed control easier and more efficient for farmers, as the process of anaerobic digestion helps to destroy unwanted weeds and viable plant propagules.
+	\item It is more homogeneous, which makes the fertilizer spreading more uniform
+\item Digestate brings jobs and economic advantages to regions.
+	\item Digestate helps to save money by using organic fertilizers.	
+\end{enumerate}
+
+Cons:
+\begin{enumerate}
+	\item Lack of a legal framework: Many European countries do not have appropriate (if any) legislation concerning digestate, resulting in legal barriers to the use of waste material, its conversion into products or its export abroad.  Moreover, despite the fact that AD is one of the most efficient ways of treating biowaste, in several member states it is still not recognized as a recycling process, nor is it explicitly acknowledged as recycling within the European waste hierarchy [Digestate Factsheet, 2015].
+	\item Clashes with existing legislation:  The EU Nitrates Directive of 1991 is crucial for protecting Europe’s environment, however, its unclear wording has led to several misinterpretations in national legislation [Digestate Factsheet, 2015].
+\item Lack of information:  Most farmers are poorly informed (or even misinformed) about the benefits of digestate and other organic fertilizers, often making them hesitant about spreading them on their land  [Digestate Factsheet, 2015].
+\end{enumerate}
+\section{Biogas production}
+\subsection{The reactor (Yi Chen,16042)}
+The biogas reactor within a biogas plant is the vessel. It can be used to produce two main products. One is digested slurry that can be used as a fertilizer, and another product is biogas that can be used as an energy source. A biogas reactor accelerates the anaerobic degradation of sludge, wastewater or biodegradable waste (e.g. animal manure, waste, vegetation etc.). It also facilitates the collection of the biogas, a mixture of methane and carbon dioxide produced in the reactor.
+\subsubsection{Biogas Reactors Operation}
+Biogas reactor is a steel tank appearance. Its interior has a heating tube and stirring mechanism, its blades built in the tank. Pretreated slurry into the tank from the top of the pump and the spray, the final accumulated in the bottom of the tank. It is heated while it is continuously stirred to the desired temperature. Under anaerobic conditions, the microorganisms degrade the organics and process them as shown in the diagram in figure B.11.
+\begin{figure}
+	\includegraphics{figb11.png}
+	\caption {process flow diagram for a typical biogas reactor process, [Willie Scott 2010]}
+	\label{process flow diagram for a typical biogas reactor process, [Willie Scott 2010]}
+\end{figure}
+The organics eventually go through four stages in the anaerobic reactor, producing methane. After the process is completed, the remaining sludge and carbon dioxide can be further processed, and then made into agricultural fertilizers. It can also save energy and reduce carbon dioxide emissions.
+\subsubsection{Anaerobic digestion}
+Anaerobic digestion is a process which uses a biogas reactor to degrade organic matter to produce biogas. The process of anaerobic digestion use microorganisms to break down organic matter in the absence of oxygen. The process often uses organic waste to obtain fuel.
+There are four stages of anaerobic digestion which called hydrolysis, acidogenesis, acetogenesis and methanogenesis. The whole process is through anaerobic digestion reaction, making the organic matter into methane and carbon dioxide.
+\subsubsection{Single-stage Anaerobic Digestion}
+The common biogas plant is to take a single-stage anaerobic digestion. biogas plants are typically designed as single reactors and are used in rural households to produce biogas. Most biogas reactors are buried underground. Biogas reactors are filled with agricultural waste, animal waste and kitchen waste. Thus biogas can be obtained. The figure B.12 is a simple biogas plant.
+\begin{figure}
+	\includegraphics[width=\textwidth]{figb12.png}
+	\caption {Small Scale Biogas Plant [blog.anaerobic-digestion.com]}
+	\label{Small Scale Biogas Plant [blog.anaerobic-digestion.com]}
+\end{figure}
+
+\subsubsection{Two-Stage Anaerobic Digestion}
+Two-stage anaerobic digestion can provide biogas plant process stability and high-quality biogas productivity. It can provide higher quality for biogas production. However, two reactors would increase the difficulty of control, and the cost is also higher than for single-stage anaerobic digesters.Therefore, two-stage anaerobic digestion is hardly designed to be used.
+As shown in figure B.13, there are two reactors, one is the acidification reactor and the other is the methane reactor.The substrate is added to the first reactor and acidification occurs in the first reactor. During the first stage, hydrolysis, acidification, fermentation occurs in the first reactor.It leads to hydrogen production and acid and alcohol accumulation.During the second stage, the second reactor has methane-rich bacteria and raw biogas obtained high-quality biogas after passing through the reactor.The biogas generated in the first stage contains a high proportion of carbon dioxide and hydrogen. The second reactor provide higher quality biogas.
+\begin{figure}[h]
+	\includegraphics{figb13.png}
+	\caption {two stage biogas plant [https://tinyurl.com/y6vh6hax]}
+	\label{two stage biogas plant [https://tinyurl.com/y6vh6hax]}
+\end{figure}
+\subsubsection{Temperature in the biogas reactor}
+In anaerobic digestion, temperature has an important role. At different temperatures, the type of methanogens in the anaerobic digester will vary. There are two major methanogenic bacteria here.
+One is mesophilic digestion. The primary microorganisms are mesophiles. The temperature is usually 30-38 °C or 20-45°C (Song Y.C., Kwon,S.J.and Woo,J.H. 2004).Another is thermophilic digestion. The primary microorganisms are thermophiles. The temperature is usually 49-57 °C or higher than 70°C (Song,Y.C.,Kwon,S.J.,Woo,J.H.,2004). At low temperatures, the anaerobic digestion reaction rate becomes slower. A properly temperate environment promotes faster reaction rates and thus increases methane gas production.
+
+\subsection{Scrubbing of biogas (Yi Chen,16042)}
+Biogas scrubbing is a crucial step in order to removes unwanted compounds and increases the methane content of the biogas.Biogas is a clean burning, renewable fuel containing 50-60\% methane. Besides methane, biogas contains other gases which are insignificant for practical purposes. Biogas needs to be purified by removing impurities as they come along from the digested before compress and bottler. These impurities reduce the heating efficiency of biogas. Because of H$_{2}$S and CO$_{2}$S, biogas needs to be purified in a scrubbing operation. The main purpose of scrubbing is to remove H$_{2}$SS, CO$_{2}$S and water vapour.
+There are three separation units in purification scrubber: CO$_{2}$S separation unit, Moisture separation unit and H$_{2}$SS separation unit.
+\subsubsection{CO2 separation unit}
+The raw biogas contains carbon dioxide.Carbon dioxide can affect the efficiency of methane combustion. By removing carbon dioxide to improve biogas quality. Meanwhile, the increase of carbon dioxide gas will make the earth's surface temperature increase. Carbon dioxide is one of the greenhouse gases. In order to protect the environment, we need to reduce greenhouse gas emissions.Therefore, carbon dioxide separation unit is an integral part.
+The raw biogas first passes through the CO2 separation unit.Calcium Oxide are used to remove carbon dioxide. Calcium Oxide reacts with carbon dioxide to form calcium carbonate.
+\newline The chemical reaction : $ CaO + CO_{2} \rightarrow CaCO_{3} $
+\newline We can also use NaOH to remove CO$_{2}$. Then pass through Ca(OH)$_{2}$ in order to check if there is any CO$_{2}$ left.
+\newline The chemical reaction : $ 2NaOH+CO_{2} \rightarrow Na_{2}CO_{3}+H_{2}O $
+\subsubsection{ Moisture separation unit}
+Water vapor in raw biogas affects combustion efficiency. We have to remove the water vapor to get a better quality of methane.There are many ways to remove moisture, the most common way is to use desiccant.Silica gel is a granular porous silica hydrate. It is a solid, and its appearance is transparent or white. It is mainly used as a desiccant.Silica gel can be heated to remove moisture, it can be recycled. It is an economical desiccant.
+In order to separate the water vapour, we set moisture separation unit. Moisture separation unit contains silica gel crystals that condense water vapour and separate moisture. The capacity of the unit is decided according to the size of the biogas plant.
+\begin{figure}
+	\includegraphics{figb14.png}
+	\caption {Moisture separation unit [M.K.Mohanty et al 2016]}
+	\label{Moisture separation unit [M.K.Mohanty et al 2016]}
+\end{figure}
+\begin{figure}
+	\includegraphics{figb15.png}
+	\caption {Silica gel crystal [https://www.naturelounge.in]}
+	\label{Silica gel crystal [https://www.naturelounge.in]}
+\end{figure}
+\subsubsection{ H2S separation unit}
+Dry desulfurization is a simple, efficient, relatively low-cost desulfurization method, which is generally suitable for biogas desulfurization with a small amount of biogas and a low concentration of hydrogen sulfide. The basic principle of equipment for the dry removal of hydrogen sulfide (H$_{2}$S) from biogas gases is a method of oxidizing H$_{2}$S to sulfur or sulfur oxides by O2, also called dry oxidation. 
+The natural biogas is passed through a H$_{2}$S separation unit. Hydrogen sulphide is removed by using catalyst iron oxide in the form of oxidized steel wool or iron turning from our workshop. Fe$_{2}$O$_{3}$ as a catalyst, it can be recycled. After chemical reaction with H$_{2}$S, fill with oxygen, we can regain Fe$_{2}$O$_{3}$.
+\newline The chemical reaction:
+\[ 2Fe_{2}O_{3} + 6H_{2}S \rightarrow 2Fe_{2}S_{3} + 6H_{2}O  \]
+\[ 2Fe_{2}S_{3} + 3O_{2} \rightarrow 2Fe_{2}O_{3} + 6S \] 
+In addition to the use of iron oxide to remove hydrogen sulphide, it is also possible to use activated carbon, lye, desulfurizing tower and so on.
+\begin{figure}
+	\includegraphics{figb16.png}
+	\caption {H2S separation unit  [M.K.Mohanty et al 2016]}
+	\label{H2S separation unit  [M.K.Mohanty et al 2016]}
+\end{figure}
+
+\textbf{Other processes for H2S removal from natural biogas}:
+\newline
+When biogas is produced from anaerobic fermentation plants, especially when it is fermented at moderate or high temperatures, it carries large amounts of H$_{2}$S. Due to the presence of large amounts of water vapour in the biogas, water and H$_{2}$S in the biogas work together to accelerate the corrosion and plugging of metal pipes, valves and flow meters. In addition, SO$_{2}$ generated after the combustion of H$_{2}$S is combined with water vapour in the combustion products into sulphurous acid to cause corrosion on the metal surface of the equipment, and also causes pollution to the atmospheric environment and affects human health. Therefore, before using biogas, H$_{2}$S must be removed; wet or biological desulfurization are two other examples of how to remove such pollutant:
+\begin{itemize}
+	\item Wet desulfurization can be grouped into a physical absorption method, chemical absorption and oxidation. Physical and chemical methods exist hydrogen sulfide reprocessing problems; the oxidation method is based on the solution as an absorbent, and oxygen carrier as a catalyst, absorbing H$_{2}$S, and its oxidation to elemental sulfur.
+	Wet oxidation is the desulfurization agent dissolved in water, liquid into the equipment, mixed with biogas. Hydrogen sulfide (H$_{2}$S) in biogas undergoes oxidation reaction. Hydrogen sulfide to generate elemental sulfur absorption of liquid sodium hydroxide, calcium hydroxide, sodium carbonate, ferrous sulfate and so on.
+	Mature technology of Desulfurization efficiency can reach more than 99.5%.
+	When sodium carbonate (Na$_{2}$CO$_{3}$) is used as a reagent for desulfurization, the chemical reaction:
+	\[ H_{2}S + Na_{2}CO_{3} \rightarrow NaHS + NaHCO_{3}  \]
+	\[ CO_{2} + Na_{2}CO_{3} + H_{2}O \rightarrow 2NaHCO_{3}  \]
+	Due to the large amount of CO$_{2}$ contained in the biogas, the lye is also consumed. The system is able to control the reaction conditions (including the reaction temperature, PH value), set the optimal reaction conditions, as much as possible to reduce the lye consumption.
+	\item Biological desulfurization technologies include biofiltration, biosorption and biotrickling. In the biological desulfurization process, sulfur-containing pollutants must be biodegradable to produce sulfide and then by the biological oxidation process to generate elemental sulfur to be removed. In most bioreactors, the microbial species are mainly bacteria, fungi are secondary and yeast is rare. Common bacteria are Thiobacillus ferrooxidans, Thiobacillus denitrifying and Thiobacillus thiophate.
+	Taking EnvironTec's biodesulfurization technology in Austria as an example, Introducing air into biogas containing hydrogen sulfide, the hydrogen sulfide is removed by a mixed gas EnvironTec biological desulfurization tower. Special plastic packings are installed inside the reactor, which provide sufficient space for desulphurization of bacteria. The circulation of the nutrient solution keeps the filler moist and replenishes the nutrients needed for the growth of the desulfurizing bacteria. Exclusive species (such as the genus Thiobacillus or Thiobacillus),with nutrient solution in the filler breeding.
+	In this case, they absorb hydrogen sulfide from the mixed biogas and convert them to elemental sulfur, which in turn is converted to dilute sulfuric acid,
+	The chemical reaction: 
+	\[ H_{2}S + 2O_{2} \rightarrow H_{2}SO_{4} \]
+	\[ H_{2}S + O_{2} \rightarrow 2S + 2H_{2}OS + H_{2}O + 1.5O_{2}  \rightarrow H_{2}SO_{4} \]
+	The resulting dilute sulfuric acid and tap water drain out of the system.
+	
+\end{itemize}
+
+\subsection{Storage}
+\section{Prototype Design}
+\section{Prototype Considerations}
+\section{Discussions and Conclusions}
+\subsection{Pros Biogas production}
+\subsection{Cons Biogas Production}
+\section{References}
+
+
+
+
+
+
+\chapter{Appendix C: Conceptual design: feels good concept}
+\chapter{Appendix D: Green Movie}
+\chapter{Appendix E: Marketing Strategy of the Green FabLab in Kamp-Lintfort}
+\chapter{Appendix F: Waste Water Treatment Plant Prototype User Manual}
+\chapter{Appendix G: Fablab goes green Website}
+\chapter{Appendix H: The Ultimate Guide to Green FabLab YouTube Channel}
+\chapter{Appendix J: Time-sheets of the group members}
+\end{document}
